@@ -1,3 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
 .home {
-  background: orange;
+  width: 100vw;
+  height: 90vh;
+  background-image: url("/src/assets/home/home-wallpaper.svg"); /* Replace with your image path */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; /* Optional: creates parallax effect */
+
+  /* Optional: Add overlay for better text readability */
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+    //background-color: rgba(0, 0, 0, 0.4); /* Dark overlay */
+    z-index: 1;
+  }
+
+  /* Ensure content appears above overlay */
+  & > * {
+    position: relative;
+    z-index: 2;
+    color: white;
+  }
+}
+
+.content {
+  margin-top: 28vh;
+  margin-left: 7vw;
+
+  @media screen and (max-width: 868px) {
+    margin-left: 4vw;
+    margin-top: 28vh;
+  }
+}
+
+.heading {
+  font-size: 10vh;
+  font-family: "Libre Franklin", sans-serif;
+  letter-spacing: 0px;
+  font-weight: 600;
+  line-height: 9.5vh;
+  span {
+    color: #f9c50d;
+  }
+
+  @media screen and (max-width: 868px) {
+    font-size: 8vh;
+  }
+}
+
+.description {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 2vh;
+  word-spacing: 0.4vh;
+  letter-spacing: 0;
+  line-height: 2.2vh;
+
+  @media screen and (max-width: 868px) {
+    font-size: 1.7vh;
+  }
+}
+.yellowBoxContainer {
+  display: flex;
+  justify-content: center;
+}
+.yellowBox {
+  margin-top: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.4vw;
+  background: #f9c50d;
+  height: 12vh;
+  border-radius: 5px;
+  width: 75vw;
+  div {
+    display: flex;
+    align-items: center;
+    gap: 0.2vw;
+    color: #3c3c3c;
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: 700;
+    font-size: 2.6vh;
+    @media screen and (max-width: 868px) {
+      font-size: 2.6vh;
+    }
+  }
+
+  @media screen and (max-width: 868px) {
+    width: 90vw;
+  }
+}
+
+.clock {
+  height: 9vh;
+  width: auto;
+
+  @media screen and (max-width: 868px) {
+    height: 8vh;
+  }
+}
+
+.money {
+  height: 7.5vh;
+  width: auto;
+  @media screen and (max-width: 868px) {
+    height: 6.5vh;
+  }
+}
+
+.sustainable {
+  height: 7.3vh;
+  width: auto;
+
+  @media screen and (max-width: 868px) {
+    height: 6.3vh;
+  }
+}
+
+.gear {
+  height: 7vh;
+  width: auto;
+
+  @media screen and (max-width: 868px) {
+    height: 6vh;
+  }
 }

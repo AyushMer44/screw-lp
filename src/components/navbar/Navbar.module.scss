@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap");
+
+.navbar {
+  //position: fixed;
+  top: 4vh;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.1);
+  //  backdrop-filter: blur(10px);
+  // -webkit-backdrop-filter: blur(10px);
+
+  border-radius: 50px;
+  padding: 1vh 3vw;
+  z-index: 1000;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 7vh;
+}
+
+.navbarContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  img {
+    height: 9vh;
+    width: auto;
+  }
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 1.1vw;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+.navLinks a {
+  font-size: 2.1vh;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  //padding: 8px 16px;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 500;
+  position: relative;
+
+  &:hover {
+    color: #ffd700;
+  }
+}
+
+// Responsive design
+@media (max-width: 768px) {
+  .navbar {
+    width: 90%;
+    padding: 6px 16px;
+  }
+
+  .navbarContainer {
+    gap: 20px;
+  }
+
+  .navLinks {
+    gap: 16px;
+  }
+
+  .navLinks a {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+
+  .logoText {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navLinks {
+    display: none; // Hide navigation links on very small screens
+  }
+
+  .navbar {
+    width: 95%;
+  }
+}
