@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Home.module.scss";
 import Navbar from "../../components/navbar/Navbar";
+import About from "../about/About";
 
 const Home = () => {
   return (
@@ -19,7 +20,6 @@ const Home = () => {
           projects
         </div>
       </div>
-
       <div className={styles.yellowBoxContainer}>
         <div className={styles.yellowBox}>
           <div>
@@ -56,6 +56,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <About />
     </div>
   );
 };

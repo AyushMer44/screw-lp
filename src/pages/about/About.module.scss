@@ -1,0 +1,6 @@
+.about {
+  color: black;
+  width: 100%; // Instead of no width declaration
+  max-width: 100%; // Prevent overflow
+  height: 100vh;
+}

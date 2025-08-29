@@ -1,0 +1,25 @@
+.screw {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  z-index: 200;
+
+  img {
+    height: 16vh;
+    width: auto;
+  }
+
+  // Tablet landscape - 1024px and below
+  @media (max-width: 1024px) {
+    img {
+      height: 12vh;
+    }
+  }
+
+  // Tablet portrait and mobile - 768px and below
+  @media (max-width: 768px) {
+    img {
+      height: 8vh;
+    }
+  }
+}
