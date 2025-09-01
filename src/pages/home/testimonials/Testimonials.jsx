@@ -1,7 +1,7 @@
 import React from "react";
-
+import styles from "./Testimonials.module.scss";
 const Testimonials = () => {
-  return <div>Testimonials</div>;
+  return <div className={styles.testimonials}>Testimonials</div>;
 };
 
 export default Testimonials;
