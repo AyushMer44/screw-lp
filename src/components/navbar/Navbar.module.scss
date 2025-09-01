@@ -16,7 +16,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 7vh;
+  height: 3.5rem;
 }
 
 .navbarContainer {
@@ -31,7 +31,7 @@
   align-items: center;
 
   img {
-    height: 9vh;
+    height: 4rem;
     width: auto;
   }
 }
@@ -39,14 +39,14 @@
 .navLinks {
   list-style: none;
   display: flex;
-  gap: 1.1vw;
+  gap: 1rem;
   padding: 0;
   margin: 0;
   align-items: center;
 }
 
 .navLinks a {
-  font-size: 2.1vh;
+  font-size: 1rem;
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   cursor: pointer;
@@ -58,6 +58,10 @@
 
   &:hover {
     color: #ffd700;
+  }
+
+  @media screen and (max-width: 1025px) {
+    font-size: 1rem;
   }
 }
 
@@ -170,7 +174,7 @@
 
   .navLinks {
     display: flex; /* Keep showing nav links on tablets */
-    gap: 16px;
+    gap: 0px;
   }
 
   .navLinks a {

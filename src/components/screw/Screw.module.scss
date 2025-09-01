@@ -5,21 +5,33 @@
   z-index: 200;
 
   img {
-    height: 16vh;
+    height: 8rem;
     width: auto;
   }
 
   // Tablet landscape - 1024px and below
-  @media (max-width: 1024px) {
+  @media (max-width: 1200px) {
     img {
-      height: 12vh;
+      height: 7rem;
+    }
+  }
+
+  @media (max-width: 1040px) {
+    img {
+      height: 6rem;
     }
   }
 
   // Tablet portrait and mobile - 768px and below
   @media (max-width: 768px) {
     img {
-      height: 8vh;
+      height: 4rem;
+    }
+  }
+
+  @media (max-width: 450px) {
+    img {
+      height: 3rem;
     }
   }
 }
