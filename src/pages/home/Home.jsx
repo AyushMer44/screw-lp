@@ -1,7 +1,8 @@
 import React from "react";
 import styles from "./Home.module.scss";
 import Navbar from "../../components/navbar/Navbar";
-import About from "../about/About";
+import About from "./about/About";
+import Testimonials from "./testimonials/Testimonials";
 
 const Home = () => {
   return (
@@ -57,6 +58,7 @@ const Home = () => {
         </div>
       </div>
       <About />
+      <Testimonials />
     </div>
   );
 };

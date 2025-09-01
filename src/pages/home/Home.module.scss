@@ -3,7 +3,7 @@
 
 .home {
   height: 90vh;
-  background-image: url("/src/assets/home/home-wallpaper.svg"); /* Replace with your image path */
+  background-image: url("/src/assets/home/wallpaper1.jpg"); /* Replace with your image path */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -12,16 +12,16 @@
   /* Optional: Add overlay for better text readability */
   position: relative;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 90%;
-    height: 90%;
-    //background-color: rgba(0, 0, 0, 0.4); /* Dark overlay */
-    z-index: 1;
-  }
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 90%;
+  //   height: 90%;
+  //   background-color: rgba(0, 0, 0, 0.4); /* Dark overlay */
+  //   z-index: 1;
+  // }
 
   /* Ensure content appears above overlay */
   & > * {
@@ -54,6 +54,11 @@
   @media screen and (max-width: 868px) {
     font-size: 8vh;
   }
+
+  @media screen and (max-width: 450px) {
+    font-size: 6vh;
+    line-height: 5.5vh;
+  }
 }
 
 .description {
@@ -82,6 +87,14 @@
   height: 12vh;
   border-radius: 5px;
   width: 75vw;
+
+  @media screen and (max-width: 450px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1vh 0vh;
+    margin-top: 0vh;
+    height: auto;
+  }
   div {
     display: flex;
     align-items: center;
@@ -90,8 +103,12 @@
     font-family: "Libre Franklin", sans-serif;
     font-weight: 700;
     font-size: 2.6vh;
-    @media screen and (max-width: 868px) {
-      font-size: 2.6vh;
+
+    @media screen and (max-width: 868px), screen and (max-height: 1500px) {
+      font-size: 1.6vh;
+    }
+    @media screen and (max-width: 450px) {
+      justify-content: center;
     }
   }
 
@@ -107,6 +124,13 @@
   @media screen and (max-width: 868px) {
     height: 8vh;
   }
+  @media screen and (max-width: 768px) {
+    height: 6vh;
+  }
+
+  @media screen and (max-width: 450px) {
+    height: 44px;
+  }
 }
 
 .money {
@@ -114,6 +138,12 @@
   width: auto;
   @media screen and (max-width: 868px) {
     height: 6.5vh;
+  }
+  @media screen and (max-width: 768px) {
+    height: 4.7vh;
+  }
+  @media screen and (max-width: 450px) {
+    height: 36px;
   }
 }
 
@@ -124,6 +154,13 @@
   @media screen and (max-width: 868px) {
     height: 6.3vh;
   }
+  @media screen and (max-width: 768px) {
+    height: 4.5vh;
+  }
+
+  @media screen and (max-width: 450px) {
+    height: 36px;
+  }
 }
 
 .gear {
@@ -132,5 +169,11 @@
 
   @media screen and (max-width: 868px) {
     height: 6vh;
+  }
+  @media screen and (max-width: 768px) {
+    height: 5vh;
+  }
+  @media screen and (max-width: 450px) {
+    height: 36px;
   }
 }
