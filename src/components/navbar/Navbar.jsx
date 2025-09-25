@@ -34,39 +34,35 @@ const Navbar = () => {
   return (
     <>
       <nav className={styles.navbar}>
+        {/* */}
         <div className={styles.navbarContainer}>
-          <div className={styles.logo}>
-            <img
-              src="/src/assets/logo/logo.svg"
-              alt="Big Screw Foundation Logo"
-              className={styles.navLogo}
-            />
-          </div>
           <ul className={styles.navLinks}>
             <li>
               <a href="#">Home</a>
             </li>
             <li>
-              <a href="#about">About</a>
+              <a href="#about">About Us</a>
+            </li>
+            <li>
+              <a href="#solor">Solar</a>
+            </li>
+            <li>
+              <a href="#about">Fencing</a>
+            </li>
+            <li>
+              <a href="#about">Housing</a>
             </li>
             <li>
               <a href="#products">Products</a>
             </li>
             <li>
-              <a href="#quality">Quality</a>
-            </li>
+              <a href="#about">Installation</a>
+            </li>{" "}
             <li>
-              <a href="#blogs">Blogs</a>
-            </li>
-            <li>
-              <a href="#faq">FAQ</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
+              <a href="#about">Contact Us</a>
             </li>
           </ul>
 
-          <div className={styles.navLinks}></div>
           {/* Hamburger menu button */}
           <div
             className={`${styles.hamburger} ${isMenuOpen ? styles.active : ""}`}
@@ -75,6 +71,18 @@ const Navbar = () => {
             <span></span>
             <span></span>
             <span></span>
+          </div>
+
+          <div className={styles.logo}>
+            <img
+              src="/src/assets/logo/Mask group.png"
+              alt="Big Screw Foundation Logo"
+              className={styles.navLogo}
+            />
+          </div>
+
+          <div className={styles.screw}>
+            <img src="/src/assets/logo/Group 19.png" alt="" />
           </div>
         </div>
       </nav>

@@ -7,18 +7,17 @@ import Testimonials from "./testimonials/Testimonials";
 const Home = () => {
   return (
     <div className={styles.home}>
-      <Navbar />
       <div className={styles.content}>
         <div className={styles.heading}>
           BIG <span> SCREW</span>
-          <br /> COMPANY <br /> FOUNDATION
+          COMPANY <br /> FOUNDATION
         </div>
         <div className={styles.description}>
-          Big Screw Company, the pioneering force in <br /> revolutionizing
-          groundwork solutions in India. As the <br /> first manufacturers to
-          scale up production of ground <br /> screws within the country, we
-          have redefined <br /> efficiency and reliability in construction
-          projects
+          Big Screw Company, the pioneering force in revolutionizing groundwork
+          solutions in India. As the first <br />
+          manufacturers to scale up production of ground screws within the
+          country, we have redefined <br /> efficiency and reliability in
+          construction projects
         </div>
       </div>
       <div className={styles.yellowBoxContainer}>
