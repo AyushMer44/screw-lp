@@ -33,6 +33,13 @@ const Navbar = () => {
   }, [isMenuOpen]);
   return (
     <>
+      <div className={styles.logo}>
+        <img
+          src="/src/assets/logo/Mask group.png"
+          alt="Big Screw Foundation Logo"
+          className={styles.navLogo}
+        />
+      </div>
       <nav className={styles.navbar}>
         {/* */}
         <div className={styles.navbarContainer}>
@@ -71,18 +78,6 @@ const Navbar = () => {
             <span></span>
             <span></span>
             <span></span>
-          </div>
-
-          <div className={styles.logo}>
-            <img
-              src="/src/assets/logo/Mask group.png"
-              alt="Big Screw Foundation Logo"
-              className={styles.navLogo}
-            />
-          </div>
-
-          <div className={styles.screw}>
-            <img src="/src/assets/logo/Group 19.png" alt="" />
           </div>
         </div>
       </nav>
@@ -131,6 +126,10 @@ const Navbar = () => {
             </a>
           </li>
         </ul>
+      </div>
+
+      <div className={styles.screw}>
+        <img src="/src/assets/logo/Group 19.png" alt="" />
       </div>
     </>
   );

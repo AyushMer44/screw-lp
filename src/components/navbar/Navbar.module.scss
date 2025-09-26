@@ -12,7 +12,7 @@
   border-top-right-radius: 50px;
   border-radius: 50px;
   padding: 1vh 3vw 1vh 0vw;
-  z-index: 100;
+  z-index: 5;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   width: 70%;
   display: flex;
@@ -29,15 +29,28 @@
 }
 
 .logo {
-  position: absolute;
-  top: 50%; /* vertical center of navbar */
-  left: -5rem; /* distance from left */
-  transform: translateY(-50%); /* center vertically */
-  margin-top: 2.7rem;
+  position: fixed;
+  z-index: 10;
+  left: 5%;
+  // top: 50%; /* vertical center of navbar */
+  // left: -5rem; /* distance from left */
+  // transform: translateY(-50%); /* center vertically */
+  // margin-top: 2.7rem;
   img {
-    height: 10rem;
-    width: auto;
+    width: 14rem;
+    height: auto;
     display: block;
+
+    @media screen and (max-width: 1370px) {
+      width: 10rem;
+    }
+    @media screen and (max-width: 1230px) {
+      width: 10rem;
+      margin-left: -2rem;
+    }
+    @media screen and (max-width: 1160px) {
+      width: 8rem;
+    }
   }
 }
 
@@ -72,12 +85,13 @@
 }
 
 .screw {
-  position: absolute;
-  top: 50%;
-  right: 1.5rem; /* distance from right */
-  transform: translateY(-50%);
-  margin-top: 2.5rem;
-  left: 103%;
+  position: fixed;
+  z-index: 10;
+  // top: 50%;
+  // right: 1.5rem; /* distance from right */
+  // transform: translateY(-50%);
+  // margin-top: 2.5rem;
+  left: 85%;
   img {
     width: 6.5rem;
     height: auto;

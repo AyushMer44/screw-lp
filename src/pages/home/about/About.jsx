@@ -4,32 +4,32 @@ const About = () => {
     {
       title: "YEAR ROUND SOLUTION",
       description:
-        "Reliable performance in all seasons and weather conditions. Ground screws maintain their structural integrity regardless of temperature fluctuations or seasonal changes.",
+        "Ground screws can be installed in any weather and on almost all soil types. They eliminate delays caused by seasonal restrictions, ensuring projects can continue smoothly year-round.",
+      img: "/src/assets/home/about/calendra.svg",
     },
     {
       title: "ENVIRONMENTALLY FRIENDLY",
       description:
-        "Eco-conscious design with minimal environmental impact. No concrete waste, reduced carbon footprint, and fully reversible installation process.",
+        "No concrete, no heavy excavation, and minimal soil disturbance. Ground screws reduce carbon footprint and preserve the natural landscape, making them a sustainable foundation choice.",
+      img: "/src/assets/home/about/plant.svg",
     },
     {
       title: "IMMEDIATELY LOADABLE",
       description:
-        "Ready to support loads immediately after installation. No waiting time for concrete to cure - structures can be built right away.",
+        "Once installed, ground screws are ready to bear load instantly—no curing time required. This makes construction faster and more efficient compared to traditional foundations.",
+      img: "/src/assets/home/about/calendra.svg",
     },
     {
       title: "NO CONCRETE & NO EXCAVATION",
       description:
-        "Installation without heavy groundwork or concrete pouring. Simple screw-in process eliminates the need for digging and mixing concrete.",
-    },
-    {
-      title: "PERMANENT & REUSABLE",
-      description:
-        "Durable and reusable for multiple projects over time. Can be easily removed and reinstalled in new locations without damage.",
+        "Ground screws require no digging or pouring concrete. This means less mess, less noise, and no waiting time, while avoiding damage to the surrounding environment.",
+      img: "/src/assets/home/about/concrete.svg",
     },
     {
       title: "COST EFFECTIVE",
       description:
-        "Offers significant cost savings compared to traditional methods. Reduces labor costs, material expenses, and installation time.",
+        "By saving time, labor, and materials, ground screws significantly reduce overall project costs. Their reusability also adds long-term value compared to conventional foundations.",
+      img: "/src/assets/home/about/save-money.svg",
     },
   ];
 
@@ -56,13 +56,32 @@ const About = () => {
           </p>
         </div>
         <div className={styles.imageContainer}>
-          <img src="/src/assets/home/Frame 49.png" alt="" />
+          <div className={`${styles.item} ${styles.tall}`}>
+            <img src="https://via.placeholder.com/400x600" alt="Tall" />
+          </div>
+
+          <div className={`${styles.item} ${styles.leftBottom}`}>
+            <img src="https://via.placeholder.com/400x250" alt="Left Bottom" />
+          </div>
+
+          <div className={styles.item}>
+            <img src="https://via.placeholder.com/400x250" alt="Right Top" />
+          </div>
+
+          <div className={styles.item}>
+            <img src="https://via.placeholder.com/400x250" alt="Right Middle" />
+          </div>
+
+          <div className={styles.item}>
+            <img src="https://via.placeholder.com/400x250" alt="Right Bottom" />
+          </div>
         </div>
+
         <div className={styles.screwPointsContainer}>
           {screwPoints.map((point, index) => (
             <div key={index} className={styles.screwPoint}>
               <div className={styles.screwImage}>
-                <img src="/src/assets/home/screwLogo.svg" alt="" />
+                <img src={point.img} alt="" />
               </div>
               <div>
                 <h4 className={styles.screwTitle}>{point.title}</h4>

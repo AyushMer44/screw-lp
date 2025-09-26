@@ -1,0 +1,47 @@
+.statsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(
+    1rem,
+    10vw,
+    180px
+  ); // min 1rem, max 180px, scales smoothly with viewport width
+  width: 100%;
+  padding: 28px 0px 100px 0px;
+
+  @media (max-width: 900px) {
+    gap: 2rem;
+    padding: 2rem 0;
+  }
+  @media (max-width: 600px) {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+.statBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 175px;
+}
+
+.statValue {
+  font-size: 6rem;
+  color: #ffd700;
+  font-weight: 700;
+  line-height: 1.1;
+  font-family: "Poppins", sans-serif;
+}
+
+.statLabel {
+  margin-top: 1.1rem;
+  font-size: 2.1rem;
+  color: #555;
+  font-family: "Poppins", sans-serif;
+
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
