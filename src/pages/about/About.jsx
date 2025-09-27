@@ -1,5 +1,6 @@
 import styles from "./About.module.scss";
 import backgroundImage from "../../assets/about/about-wallpaper.png"; // adjust path accordingly
+import OurTeam from "./ourTeam/OurTeam";
 
 const About = () => {
   return (
@@ -60,6 +61,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      <OurTeam />
     </>
   );
 };
