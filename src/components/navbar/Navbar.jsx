@@ -45,10 +45,10 @@ const Navbar = () => {
         <div className={styles.navbarContainer}>
           <ul className={styles.navLinks}>
             <li>
-              <a href="#">Home</a>
+              <a href="/">Home</a>
             </li>
             <li>
-              <a href="#about">About Us</a>
+              <a href="/about">About Us</a>
             </li>
             <li>
               <a href="#solor">Solar</a>
