@@ -6,6 +6,7 @@
 
 .header {
   margin-top: 32px;
+
   h2 {
     font-size: 3rem;
     font-family: "Roboto Slab", serif;
@@ -16,7 +17,7 @@
   }
   .subheading {
     font-size: 1.9rem;
-    margin-bottom: 30px;
+    margin-bottom: 4rem;
     font-family: "Reddit", sans-serif;
     color: #444;
     letter-spacing: 1px;
@@ -56,10 +57,24 @@
   justify-content: center;
   overflow: hidden;
   border-radius: 4px;
+
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 0.35s ease; // smooth image scaling too
+  }
+
+  /* Hover effect */
+  &:hover {
+    transform: scale(1.18); // hexagon pops up
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+
+    img {
+      transform: scale(1.08); // zoom image slightly
+    }
   }
 }
 
@@ -85,10 +100,11 @@
 }
 
 .description {
-  height: 50vh;
+  height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 10vh;
   p {
     color: #1d1d1d;
     text-align: center;

@@ -60,26 +60,22 @@
   }
 
   .cardRow {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    max-width: 1100px;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    padding: 0 4rem;
     background: transparent;
   }
 
   .card {
     flex: 1 1 0;
     background: #fff;
-
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 0px 60px 0px #00000040;
     border-right: none;
-    padding: 20px 36px 20px 36px;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-width: 220px;
-    max-width: 360px;
 
     .iconCircle {
       img {
@@ -99,7 +95,7 @@
 
     .cardTitle {
       color: #222;
-      font-size: 1.3rem;
+      font-size: 1.75rem;
       font-weight: 600;
       margin-bottom: 10px;
       font-family: "Libre Franklin", sans-serif;
@@ -107,10 +103,10 @@
 
     .cardText {
       color: #545454;
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       font-weight: 400;
       line-height: 1.5;
-      max-width: 270px;
+
       font-family: "Poppins", sans-serif;
     }
   }
