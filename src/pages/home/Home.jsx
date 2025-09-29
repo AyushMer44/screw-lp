@@ -5,7 +5,6 @@ import About from "./about/About";
 import Testimonials from "./testimonials/Testimonials";
 import FAQ from "./FAQ/FAQ";
 import StatsSection from "./Stats/StatsSection";
-import Footer from "../../components/footer/Footer";
 
 const Home = () => {
   return (
@@ -62,7 +61,6 @@ const Home = () => {
       <About />
       <FAQ />
       <StatsSection />
-      <Footer />
     </div>
   );
 };
