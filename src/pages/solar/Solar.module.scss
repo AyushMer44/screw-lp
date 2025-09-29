@@ -1,0 +1,225 @@
+.aboutUs {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #222;
+  height: 100vh;
+  .heroSection {
+    position: relative;
+    height: 106%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0 0 80px 80px;
+    z-index: 1;
+    .aboutTitle {
+      position: relative;
+      color: #fff;
+      font-size: 4rem;
+      font-weight: bold;
+      font-family: "ramaraj", serif;
+      letter-spacing: 2px;
+      z-index: 2;
+      text-align: center;
+      margin: 140px 0 0 0;
+    }
+  }
+
+  .aboutContent {
+    max-width: 800px;
+
+    padding: 24px;
+    background: #f7f7f7;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+
+    h2 {
+      margin-bottom: 12px;
+    }
+
+    p {
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+  }
+}
+
+.solarText {
+  p {
+    margin-top: 10px;
+    color: #f9c50d;
+    text-align: center;
+    font-family: "Reddit Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 90%; /* 18px */
+  }
+}
+
+// Yellow Box
+
+.yellowBoxContainer {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%) translateY(45%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  pointer-events: none; // optional, keeps content clickable above
+}
+
+.yellowBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  background: #f9c50d;
+  height: 6.5rem;
+  border-radius: 14px;
+  width: 75rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+  pointer-events: auto; // keep box clickable
+
+  @media screen and (max-width: 1230px) {
+    width: 95vw;
+  }
+  @media screen and (max-width: 868px) {
+    gap: 1rem;
+    width: 97vw;
+  }
+  @media screen and (max-width: 680px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0rem;
+    height: auto;
+  }
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    color: #3c3c3c;
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+}
+
+// The rest of your icon and text styles remain unchanged
+
+.clock {
+  height: 4rem;
+  width: auto;
+
+  @media screen and (max-width: 910px) {
+    height: 3rem;
+  }
+  @media screen and (max-width: 768px) {
+    height: 2rem;
+  }
+
+  @media screen and (max-width: 450px) {
+    height: 4rem;
+  }
+}
+
+.money {
+  height: 3.4rem;
+  width: auto;
+  @media screen and (max-width: 910px) {
+    height: 2.4rem;
+  }
+  @media screen and (max-width: 768px) {
+    height: 1.7rem;
+  }
+  @media screen and (max-width: 450px) {
+    height: 4rem;
+  }
+}
+
+.sustainable {
+  height: 3.4rem;
+  width: auto;
+
+  @media screen and (max-width: 910px) {
+    height: 2.4rem;
+  }
+  @media screen and (max-width: 768px) {
+    height: 1.7rem;
+  }
+
+  @media screen and (max-width: 450px) {
+    height: 4rem;
+  }
+}
+
+.gear {
+  height: 3.6rem;
+  width: auto;
+
+  @media screen and (max-width: 910px) {
+    height: 2.6rem;
+  }
+  @media screen and (max-width: 768px) {
+    height: 1.8rem;
+  }
+  @media screen and (max-width: 450px) {
+    height: 4rem;
+  }
+}
+
+.about {
+  margin: 4%;
+  padding-bottom: 2%;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  row-gap: 2rem;
+  column-gap: 2rem;
+  margin-top: 200px;
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.heading {
+  p {
+    color: black;
+    margin: 0% 0% 0% 8%;
+    font-size: 4rem;
+    font-family: "Ramaraja", sans-serif;
+    line-height: 3.6rem;
+    font-weight: 550;
+    @media (max-width: 668px) {
+      margin: 0% 0% 0% 4%;
+    }
+  }
+}
+
+.description {
+  position: relative;
+  p {
+    color: black;
+    margin: 0% 0% 0% 6%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.75rem;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 2%;
+    width: 2px;
+    height: 70%;
+    background-color: #f9c50d; /* Yellow vertical line */
+  }
+}
