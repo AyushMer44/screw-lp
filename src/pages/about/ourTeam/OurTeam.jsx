@@ -65,6 +65,7 @@ const OurTeam = () => (
         with precision, efficiency, and care for the environment.
       </p>
     </div>
+    <Footer />
   </div>
 );
 

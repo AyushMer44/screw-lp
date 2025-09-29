@@ -60,13 +60,13 @@ const Navbar = () => {
               <a href="#about">Housing</a>
             </li>
             <li>
-              <a href="#products">Products</a>
+              <a href="/products">Products</a>
             </li>
             <li>
-              <a href="#about">Installation</a>
+              <a href="/installation">Installation</a>
             </li>{" "}
             <li>
-              <a href="#about">Contact Us</a>
+              <a href="/contact">Contact Us</a>
             </li>
           </ul>
 
