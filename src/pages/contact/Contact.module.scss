@@ -1,0 +1,152 @@
+.contactUs {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #222;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+
+  .heroSection {
+    position: relative;
+    height: 78vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 80px 80px;
+    width: 100%; /* Ensure the hero section spans full width */
+
+    .contactTitle {
+      position: relative;
+      color: #fff;
+      font-size: 3rem;
+      font-weight: bold;
+      font-family: "ramaraj";
+      letter-spacing: 2px;
+      z-index: 2;
+      text-align: center;
+      margin-top: 6rem;
+    }
+  }
+
+  .contactFormSection {
+    padding: 50px;
+    padding-left: 5rem;
+    background-color: #fff;
+    height: auto;
+    //overflow: hidden; /* Prevent overflow within the form section */
+  }
+
+  .contactFormContainer {
+    display: flex;
+    //flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%; /* Make sure the container stretches full width */
+  }
+
+  .contactFormContent {
+    margin-left: 4rem;
+    flex: 1;
+    padding: 0 2rem;
+    max-width: 40vw;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Add a soft shadow */
+
+    h2{
+      font-size: 3rem;
+      margin:0;
+    }
+    span {
+      color: #f1c40f;
+    }
+  }
+
+  .contactForm {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inputField {
+    margin-bottom: 22px;
+  }
+
+  .inputField input,
+  .inputField select {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+  }
+
+  .inputField input::placeholder,
+  .inputField select {
+    color: #aaa;
+    font-style: italic;
+  }
+
+  .inputField input:focus,
+  .inputField select:focus {
+    border-color: #f1c40f;
+    outline: none;
+  }
+
+  .submitButton {
+    padding: 10px 20px;
+    background-color: #f1c40f;
+    color: #000000;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    //margin-bottom: 1rem;
+  }
+
+  .submitButton:hover {
+    background-color: #e67e22;
+  }
+
+  .contactMap {
+    flex: 1 1 50px; /* Allows flexibility with a minimum width of 350px */
+    //padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    //max-width: 100%; /* Ensure the map container fills the space without overflow */
+  }
+
+}
+
+.cardContainer{
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+  margin-bottom: 4rem;
+
+  .card{
+    display: flex;
+    gap: 1rem;
+    width: 15rem;
+  }
+}
+
+.p1{
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+}
+
+.p2{
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  font-size: 1.3rem;
+  color: #f1c40f;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
