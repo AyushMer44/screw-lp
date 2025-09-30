@@ -10,19 +10,18 @@ import screw3 from "../../assets/product/screw3.png"
 import screw4 from "../../assets/product/screw4.png"
 import dummy1 from "../../assets/product/dummy1.png"
 import Footer from "../../components/footer/Footer.jsx";
-const Products = () => {
 
+const Products = () => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start end", "end start"], // animation triggers while image is in view
+    offset: ["start end", "end start"],
   });
 
-  // Fade in/out at different scroll positions
-  const topOpacity = useTransform(scrollYProgress, [0.2, 0.35], [1, 0]); // fades out after 30%
-  const centerOpacity = useTransform(scrollYProgress, [0.35, 0.5], [0, 1]); // fades in between 30%-60%
-  const centerBottomOpacity = useTransform(scrollYProgress, [0.5, 0.6], [0, 1]); // fades in between 30%-60%
-  const bottomOpacity = useTransform(scrollYProgress, [0.61, 0.7], [0, 1]); // fades in at bottom
+  const topOpacity = useTransform(scrollYProgress, [0.2, 0.35], [1, 0]);
+  const centerOpacity = useTransform(scrollYProgress, [0.35, 0.5], [0, 1]);
+  const centerBottomOpacity = useTransform(scrollYProgress, [0.5, 0.6], [0, 1]);
+  const bottomOpacity = useTransform(scrollYProgress, [0.61, 0.7], [0, 1]);
 
   const MyIcon1 = ({width = "57", height = "57"}) => (
       <svg width={width} height={height} viewBox="0 0 65 72" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -43,6 +42,7 @@ const Products = () => {
         <path d="M20.1128 22.999L45.1773 50.8485" stroke="white" strokeWidth="5.56989" strokeLinecap="round"/>
       </svg>
   );
+
   return <>
     <div className={styles.product}>
       <div
@@ -63,72 +63,52 @@ const Products = () => {
         <div className={styles.middleContainer}>
           <div className={styles.middle}>
             <MyIcon1/>
-
             <p>Galvanized</p>
-
             <MyIcon2/>
           </div>
           <div className={styles.middle}>
             <MyIcon1/>
-
             <p>Greater Depth</p>
-
             <MyIcon2/>
           </div>
           <div className={styles.middle}>
             <MyIcon1/>
-
             <p>Works in all soil types</p>
-
             <MyIcon2/>
           </div>
           <div className={styles.middle}>
             <MyIcon1/>
-
             <p>Quick Installation</p>
-
             <MyIcon2/>
           </div>
           <div className={styles.middle}>
             <MyIcon1/>
-
             <p>High Load Capacity</p>
-
             <MyIcon2/>
           </div>
           <div className={styles.middle}>
             <MyIcon1/>
-
             <p>Onsite Welding Possible</p>
-
             <MyIcon2/>
           </div>
           <div className={styles.middle}>
             <MyIcon1/>
-
             <p>Reusable/Removable</p>
-
             <MyIcon2/>
           </div>
           <div className={styles.middle}>
             <MyIcon1/>
-
             <p>Best For Heavy Structures</p>
-
             <MyIcon2/>
           </div>
           <div className={styles.middle}>
             <MyIcon1/>
-
             <p>Higher Cost</p>
-
             <MyIcon2/>
           </div>
           <div className={styles.middle}>
             <MyIcon1/>
-
             <p>Lower Cost</p>
-
             <MyIcon2/>
           </div>
         </div>
@@ -140,16 +120,13 @@ const Products = () => {
           <img src={image2} ref={ref} alt="Carbon Steel Pipe"/>
         </div>
 
-        {/* Top Animation */}
         <motion.div style={{opacity: topOpacity}} className={styles.annotation}>
           <div className={styles.pack}>
             <div className={styles.circle}></div>
             <p>CARBON STEEL ROUND PIPE</p>
           </div>
-
           <p>Carbon Steel Round Pipe, Strong carbon steel pipes (68-115) with hot-dip galvanization
             for rust-free, long-lasting performance.</p>
-
         </motion.div>
 
         <motion.div style={{opacity: centerOpacity}} className={styles.annotation1}>
@@ -157,10 +134,8 @@ const Products = () => {
             <div className={styles.circle}></div>
             <p>TOP CONNECTION FLANGE</p>
           </div>
-
           <p>Engineered for secure load mounting with two options: nut lock
-          or flanged connection.</p>
-
+            or flanged connection.</p>
         </motion.div>
 
         <motion.div style={{opacity: centerBottomOpacity}} className={styles.annotation2}>
@@ -168,10 +143,8 @@ const Products = () => {
             <div className={styles.circle}></div>
             <p>SPIRAL HELIX</p>
           </div>
-
           <p>Engineered for secure load mounting with two options: nut lock
-          or flanged connection</p>
-
+            or flanged connection</p>
         </motion.div>
 
         <motion.div style={{opacity: bottomOpacity}} className={styles.annotation3}>
@@ -179,10 +152,8 @@ const Products = () => {
             <div className={styles.circle}></div>
             <p>FORGED TIP</p>
           </div>
-
           <p>Hot-formed conical tip built tough to penetrate rocky and
-          dense soils with ease.</p>
-
+            dense soils with ease.</p>
         </motion.div>
       </div>
 
@@ -213,18 +184,10 @@ const Products = () => {
         <div className={styles.first}>
           <p>Extendables</p>
           <div className={styles.cardContainer}>
-            <div className={styles.card}>
-
-            </div>
-            <div className={styles.card}>
-
-            </div>
-            <div className={styles.card}>
-
-            </div>
-            <div className={styles.card}>
-
-            </div>
+            <div className={styles.card}></div>
+            <div className={styles.card}></div>
+            <div className={styles.card}></div>
+            <div className={styles.card}></div>
           </div>
         </div>
       </div>
