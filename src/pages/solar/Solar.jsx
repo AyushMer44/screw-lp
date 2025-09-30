@@ -5,6 +5,7 @@ import SolarContent from "./solarContent/SolarContent";
 import WhyChooseSolar from "./whyChosseSolar/WhyChooseSolar";
 import Footer from "../../components/footer/Footer";
 import Applications from "./applications/Applications";
+import GroundScrewProcess from "./process/ProcessGroundScrew";
 
 const Solar = () => {
   return (
@@ -85,6 +86,8 @@ const Solar = () => {
       <SolarContent />
       <WhyChooseSolar />
       <Applications />
+      <GroundScrewProcess />
+
       <Footer />
     </div>
   );

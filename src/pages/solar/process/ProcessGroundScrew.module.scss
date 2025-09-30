@@ -1,0 +1,208 @@
+// GroundScrewProcess.module.scss
+
+.card {
+  width: 100%;
+  min-height: 100vh;
+  border-radius: 90px 0 0 0;
+  overflow: hidden;
+  position: relative;
+  @media (max-width: 768px) {
+    min-height: auto;
+    border-radius: 16px 0 0 0;
+  }
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* Ensures the image stays contained and scaled */
+  border-top-left-radius: 90px;
+
+  z-index: -1;
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    #161616 19.01%,
+    rgba(11, 11, 11, 0.75) 45.65%,
+    rgba(0, 0, 0, 0.5) 68%,
+    rgba(0, 0, 0, 0) 97.25%
+  );
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 7rem;
+
+  @media (max-width: 768px) {
+    padding: 2rem 1.5rem;
+  }
+}
+
+.header {
+  margin-bottom: 8rem;
+
+  @media (max-width: 768px) {
+    margin-bottom: 2rem;
+  }
+}
+
+.title {
+  font-family: "ramaraja", sans-serif;
+  font-size: 6rem;
+  font-weight: 400;
+  color: #f9c50d;
+  margin: 0 0 0.75rem 0;
+  line-height: 99%;
+  letter-spacing: 0%;
+
+  @media (max-width: 768px) {
+    font-size: 1.75rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.5rem;
+  }
+}
+
+.highlight {
+  color: #fbbf24;
+}
+
+.subtitle {
+  font-family: "Reddit Sans", sans-serif;
+  color: #fff;
+  font-size: 2rem;
+  font-style: italic;
+  margin: 0;
+  font-weight: 400;
+
+  @media (max-width: 768px) {
+    font-size: 0.875rem;
+  }
+}
+
+.processList {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  @media (max-width: 768px) {
+    gap: 1.5rem;
+  }
+}
+
+.processItem {
+  animation: fadeInUp 0.6s ease-out backwards;
+
+  display: flex;
+  justify-content: space-between;
+
+  &:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  &:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  &:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+  &:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+}
+
+.processTitle {
+  font-family: "Franklin Gothic Medium", sans-serif;
+  font-size: 2.75rem;
+  font-weight: 400;
+  color: #f9c50d;
+  margin: 0 0 2.5rem 0;
+  padding-left: 1rem;
+  letter-spacing: -0.01em;
+
+  @media (max-width: 768px) {
+    font-size: 1.25rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.125rem;
+  }
+}
+
+.processDescription {
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #ffffff;
+  margin: 0;
+  font-family: "Reddit Sans", sans-serif;
+  font-weight: 400;
+  line-height: 162%;
+  letter-spacing: 0%;
+  width: 75%;
+
+  @media (max-width: 768px) {
+    font-size: 0.875rem;
+    line-height: 1.6;
+
+    width: 100%;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hexagon {
+  width: 248px;
+  height: 266px;
+  clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+  background: #ffc700; // border color
+  padding: 12px; // border thickness
+  border-radius: 20px; // optional, keeps smoother edges
+  margin-left: 2rem;
+
+  .processImage {
+    width: 248px;
+    height: 266px;
+    object-fit: cover;
+    clip-path: inherit; // same hexagon shape
+    border-radius: inherit;
+
+    @media (max-width: 508px) {
+      width: 180px;
+      height: 193px;
+    }
+  }
+
+  @media (max-width: 508px) {
+    width: 180px;
+    height: 193px;
+    margin-left: 0;
+  }
+}
