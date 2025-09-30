@@ -110,10 +110,12 @@
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+    padding: 0 2.5rem;
   }
 
   .card {
     width: 100%;
     max-width: 400px;
+    height: auto;
   }
 }
