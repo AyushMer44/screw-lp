@@ -1,0 +1,92 @@
+.container {
+  text-align: center;
+  margin: 3rem auto;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #2c2c2c;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  position: relative;
+
+  height: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+
+  &:hover {
+    .text {
+      transform: translate(-50%, -50%) scale(0.95); /* Scale down the main text */
+    }
+
+    .overlay {
+      opacity: 1; /* Show the overlay text */
+      visibility: visible; /* Make overlay text visible */
+    }
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%);
+  }
+
+  .text {
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 2.25rem;
+    font-weight: 500;
+    width: 100%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+  }
+
+  .overlay {
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 400;
+
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    opacity: 0; /* Hidden by default */
+    visibility: hidden; /* Hidden by default */
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition */
+  }
+}
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 1rem;
+  }
+}
