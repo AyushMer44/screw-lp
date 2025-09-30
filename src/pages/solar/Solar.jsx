@@ -2,6 +2,9 @@ import React from "react";
 import backgroundImage from "../../assets/solar/solar.png"; // adjust path accordingly
 import styles from "./Solar.module.scss";
 import SolarContent from "./solarContent/SolarContent";
+import WhyChooseSolar from "./whyChosseSolar/WhyChooseSolar";
+import Footer from "../../components/footer/Footer";
+import Applications from "./applications/Applications";
 
 const Solar = () => {
   return (
@@ -80,6 +83,9 @@ const Solar = () => {
         </div>
       </div>
       <SolarContent />
+      <WhyChooseSolar />
+      <Applications />
+      <Footer />
     </div>
   );
 };
