@@ -106,10 +106,30 @@
     font-family: "Libre Franklin", sans-serif;
     font-weight: 700;
     font-size: 1.5rem;
+    @media screen and (max-width: 1150px) {
+      font-size: 1.4rem;
+    }
+    @media screen and (max-width: 910px) {
+      font-size: 1.2rem;
+    }
+    @media screen and (max-width: 680px) {
+      font-size: 1.25rem;
+
+      height: 4rem;
+    }
+    @media screen and (max-width: 450px) {
+      justify-content: center;
+    }
+  }
+
+  @media screen and (max-width: 868px) {
+    gap: 1rem;
+    width: 95vw;
+  }
+  @media screen and (max-width: 680px) {
+    gap: 0rem;
   }
 }
-
-// The rest of your icon and text styles remain unchanged
 
 .clock {
   height: 4rem;
@@ -123,7 +143,7 @@
   }
 
   @media screen and (max-width: 450px) {
-    height: 4rem;
+    height: 3rem;
   }
 }
 
@@ -137,7 +157,7 @@
     height: 1.7rem;
   }
   @media screen and (max-width: 450px) {
-    height: 4rem;
+    height: 3rem;
   }
 }
 
@@ -153,7 +173,7 @@
   }
 
   @media screen and (max-width: 450px) {
-    height: 4rem;
+    height: 3rem;
   }
 }
 
@@ -168,7 +188,7 @@
     height: 1.8rem;
   }
   @media screen and (max-width: 450px) {
-    height: 4rem;
+    height: 3rem;
   }
 }
 
