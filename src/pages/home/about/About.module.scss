@@ -105,6 +105,10 @@
   height: 90vh;
   padding: 1rem;
   background: #fff;
+
+  @media (max-width: 768px) {
+    padding: 0;
+  }
 }
 
 .tall {
