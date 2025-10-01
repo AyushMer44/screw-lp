@@ -65,6 +65,9 @@
   @media (max-width: 668px) {
     gap: 1rem;
   }
+  @media (max-width: 380px) {
+    margin: 0;
+  }
 }
 
 .screwPoint {

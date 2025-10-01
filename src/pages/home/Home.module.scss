@@ -61,6 +61,10 @@
     font-size: 6vh;
     line-height: 5.5vh;
   }
+  @media screen and (max-width: 380px) {
+    font-size: 5vh;
+    line-height: 5.5vh;
+  }
 }
 
 .description {
