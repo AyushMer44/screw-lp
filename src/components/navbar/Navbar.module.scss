@@ -196,6 +196,7 @@
 @media screen and (max-width: 1110px){
 
   .navbar {
+    box-sizing: border-box;
     border-radius: 12px;
     width: 98%;
     padding: 6px 16px;
@@ -220,6 +221,7 @@
 // Responsive design
 @media screen and (max-width: 860px) {
   .navbar {
+    box-sizing: border-box;
     border-radius: 12px;
     width: 98%;
     padding: 6px 16px;
