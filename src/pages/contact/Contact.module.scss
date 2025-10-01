@@ -36,6 +36,10 @@
         margin-top: 2rem;
       }
     }
+    @media (max-width: 768px) {
+      height: 50vh;
+      border-radius: 0 0 40px 40px;
+    }
   }
 
   .contactFormSection {
