@@ -128,6 +128,9 @@
     @media screen and (max-width: 450px) {
       justify-content: center;
     }
+    @media screen and (max-width: 380px) {
+      font-size: 1rem;
+    }
   }
 
   @media screen and (max-width: 868px) {
@@ -153,6 +156,9 @@
   @media screen and (max-width: 450px) {
     height: 3rem;
   }
+  @media screen and (max-width: 380px) {
+    height: 2rem;
+  }
 }
 
 .money {
@@ -166,6 +172,9 @@
   }
   @media screen and (max-width: 450px) {
     height: 3rem;
+  }
+  @media screen and (max-width: 380px) {
+    height: 2rem;
   }
 }
 
@@ -183,6 +192,9 @@
   @media screen and (max-width: 450px) {
     height: 3rem;
   }
+  @media screen and (max-width: 380px) {
+    height: 2rem;
+  }
 }
 
 .gear {
@@ -197,5 +209,8 @@
   }
   @media screen and (max-width: 450px) {
     height: 3rem;
+  }
+  @media screen and (max-width: 380px) {
+    height: 2rem;
   }
 }
