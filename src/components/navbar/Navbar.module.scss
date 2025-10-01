@@ -32,10 +32,7 @@
   position: fixed;
   z-index: 10;
   left: 5%;
-  // top: 50%; /* vertical center of navbar */
-  // left: -5rem; /* distance from left */
-  // transform: translateY(-50%); /* center vertically */
-  // margin-top: 2.7rem;
+
   img {
     width: 14rem;
     height: auto;
@@ -70,7 +67,6 @@
   text-decoration: none;
   cursor: pointer;
   transition: all 0.3s ease;
-  //padding: 8px 16px;
   font-family: "Libre Franklin", sans-serif;
   font-weight: 500;
   position: relative;
@@ -87,19 +83,23 @@
 .screw {
   position: fixed;
   z-index: 10;
-  // top: 50%;
-  // right: 1.5rem; /* distance from right */
-  // transform: translateY(-50%);
-  // margin-top: 2.5rem;
   left: 85%;
+
   img {
     width: 6.5rem;
     height: auto;
+    transition: transform 0.3s ease;
+    transform-origin: top center;
+  }
+
+  &:hover img {
+    transform: scale(1.05, 1.2);
   }
 }
+
 // Hamburger menu styles - HIDDEN BY DEFAULT
 .hamburger {
-  display: none; /* Hide on large screens */
+  display: none;
   flex-direction: column;
   cursor: pointer;
   padding: 5px;
@@ -193,10 +193,35 @@
   }
 }
 
-// Responsive design
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1110px){
+
   .navbar {
-    width: 85%;
+    border-radius: 12px;
+    width: 98%;
+    padding: 6px 16px;
+  }
+
+  .navLinks {
+    margin-left: 10vw;
+    display: flex;
+    gap: 4px;
+  }
+
+  .navLinks a {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+
+  .screw {
+    display: none;
+  }
+}
+
+// Responsive design
+@media screen and (max-width: 860px) {
+  .navbar {
+    border-radius: 12px;
+    width: 98%;
     padding: 6px 16px;
   }
 
@@ -205,34 +230,98 @@
   }
 
   .navLinks {
-    display: flex; /* Keep showing nav links on tablets */
-    gap: 0px;
-  }
-
-  .navLinks a {
-    font-size: 13px;
-    padding: 6px 12px;
-  }
-
-  .logoText {
-    font-size: 12px;
+    display: none;
   }
 
   .hamburger {
-    display: none; /* Still hidden on tablets */
+    display: flex;
+    position: absolute;
+    right: 1rem; /* Position hamburger to the right */
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .logo {
+    left: 3%;
+
+    img {
+      width: 7rem;
+      margin-left: 0;
+    }
+  }
+
+  /* HIDE SCREW IMAGE ON MOBILE */
+  .screw {
+    display: none;
   }
 }
 
 @media screen and (max-width: 680px) {
-  .navLinks {
-    display: none; /* Hide navigation links on very small screens */
+  .navbar {
+    border-radius: 12px;
+    width: 98%;
+    padding: 1vh 2vw;
   }
 
-  .navbar {
-    width: 85%;
+  .navbarContainer {
+    justify-content: flex-end; /* Push hamburger to the right */
+    padding-right: 1rem;
+  }
+
+  .navLinks {
+    display: none;
   }
 
   .hamburger {
-    display: flex; /* Show hamburger on mobile screens only */
+    display: flex;
+    position: absolute;
+    right: 1rem; /* Position hamburger to the right */
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .logo {
+    left: 3%;
+
+    img {
+      width: 7rem;
+      margin-left: 0;
+    }
+  }
+
+  /* HIDE SCREW IMAGE ON MOBILE */
+  .screw {
+    display: none;
+  }
+}
+
+/* Extra small screens */
+@media screen and (max-width: 480px) {
+  .navbar {
+    border-radius: 12px;
+    width: 98%;
+    padding: 8px 12px;
+  }
+
+  .logo {
+    left: 2%;
+
+    img {
+      width: 6rem;
+    }
+  }
+
+  .hamburger {
+    right: 0.5rem;
+  }
+
+  .mobileMenu {
+    ul {
+      li {
+        a {
+          font-size: 1.3rem;
+        }
+      }
+    }
   }
 }

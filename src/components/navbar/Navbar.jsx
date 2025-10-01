@@ -91,39 +91,29 @@ const Navbar = () => {
         </button>
         <ul>
           <li>
-            <a href="#" onClick={handleLinkClick}>
-              Home
-            </a>
+            <a href="/" onClick={handleLinkClick}>Home</a>
           </li>
           <li>
-            <a href="#about" onClick={handleLinkClick}>
-              About
-            </a>
+            <a href="/about" onClick={handleLinkClick}>About Us</a>
           </li>
           <li>
-            <a href="#products" onClick={handleLinkClick}>
-              Products
-            </a>
+            <a href="/solar" onClick={handleLinkClick}>Solar</a>
           </li>
           <li>
-            <a href="#quality" onClick={handleLinkClick}>
-              Quality
-            </a>
+            <a href="#about" onClick={handleLinkClick}>Fencing</a>
           </li>
           <li>
-            <a href="#blogs" onClick={handleLinkClick}>
-              Blogs
-            </a>
+            <a href="#about" onClick={handleLinkClick}>Housing</a>
           </li>
           <li>
-            <a href="#faq" onClick={handleLinkClick}>
-              FAQ
-            </a>
+            <a href="/products" onClick={handleLinkClick}>Products</a>
           </li>
           <li>
-            <a href="#contact" onClick={handleLinkClick}>
-              Contact
-            </a>
+            <a href="/installation" onClick={handleLinkClick}>Installation</a>
+          </li>
+          {" "}
+          <li>
+            <a href="/contact" onClick={handleLinkClick}>Contact Us</a>
           </li>
         </ul>
       </div>
