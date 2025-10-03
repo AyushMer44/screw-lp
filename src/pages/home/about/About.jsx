@@ -1,4 +1,9 @@
 import styles from "./About.module.scss";
+import Home from "../../../assets/home/about/Home.png"
+import Home1 from "../../../assets/home/about/Home1.png"
+import Home2 from "../../../assets/home/about/Home2.png"
+import Home3 from "../../../assets/home/about/Home3.png"
+import Home4 from "../../../assets/home/about/Home5.png"
 const About = () => {
   const screwPoints = [
     {
@@ -57,23 +62,23 @@ const About = () => {
         </div>
         <div className={styles.imageContainer}>
           <div className={`${styles.item} ${styles.tall}`}>
-            <img src="https://via.placeholder.com/400x600" alt="Tall" />
+            <img src={Home} alt="Tall"/>
           </div>
 
           <div className={`${styles.item} ${styles.leftBottom}`}>
-            <img src="https://via.placeholder.com/400x250" alt="Left Bottom" />
+            <img src={Home1} alt="Left Bottom"/>
           </div>
 
           <div className={styles.item}>
-            <img src="https://via.placeholder.com/400x250" alt="Right Top" />
+            <img src={Home3} alt="Right Top"/>
           </div>
 
           <div className={styles.item}>
-            <img src="https://via.placeholder.com/400x250" alt="Right Middle" />
+            <img src={Home2} alt="Right Middle"/>
           </div>
 
           <div className={styles.item}>
-            <img src="https://via.placeholder.com/400x250" alt="Right Bottom" />
+            <img src={Home4} alt="Right Bottom"/>
           </div>
         </div>
 

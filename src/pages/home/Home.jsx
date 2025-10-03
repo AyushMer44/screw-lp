@@ -6,6 +6,10 @@ import Testimonials from "./testimonials/Testimonials";
 import FAQ from "./FAQ/FAQ";
 import StatsSection from "./Stats/StatsSection";
 import Footer from "../../components/footer/Footer";
+import Clock from "../../assets/home/yellowBox/clock-fast.svg"
+import Money from "../../assets/home/yellowBox/money.svg"
+import Sustainable from "../../assets/home/yellowBox/sustainable.svg"
+import Gear from "../../assets/home/yellowBox/gear.svg"
 
 const Home = () => {
   return (
@@ -27,7 +31,7 @@ const Home = () => {
         <div className={styles.yellowBox}>
           <div>
             <img
-              src="/src/assets/home/yellowBox/clock-fast.svg"
+              src={Clock}
               alt=""
               className={styles.clock}
             />
@@ -35,7 +39,7 @@ const Home = () => {
           </div>
           <div>
             <img
-              src="/src/assets/home/yellowBox/money.svg"
+              src={Money}
               alt=""
               className={styles.money}
             />
@@ -43,7 +47,7 @@ const Home = () => {
           </div>
           <div>
             <img
-              src="/src/assets/home/yellowBox/sustainable.svg"
+              src={Sustainable}
               alt=""
               className={styles.sustainable}
             />
@@ -51,7 +55,7 @@ const Home = () => {
           </div>
           <div>
             <img
-              src="/src/assets/home/yellowBox/gear.svg"
+              src={Gear}
               alt=""
               className={styles.gear}
             />

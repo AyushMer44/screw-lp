@@ -18,10 +18,16 @@ const Products = () => {
     offset: ["start end", "end start"],
   });
 
-  const topOpacity = useTransform(scrollYProgress, [0.2, 0.35], [1, 0]);
-  const centerOpacity = useTransform(scrollYProgress, [0.35, 0.5], [0, 1]);
-  const centerBottomOpacity = useTransform(scrollYProgress, [0.5, 0.6], [0, 1]);
-  const bottomOpacity = useTransform(scrollYProgress, [0.61, 0.7], [0, 1]);
+  // Create color transforms for each annotation
+  const color0 = useTransform(scrollYProgress, [0.15, 0.3, 0.35], ['#F9C50D', '#F9C50D', '#666']);
+  const color1 = useTransform(scrollYProgress, [0.3, 0.35, 0.5, 0.55], ['#666', '#F9C50D', '#F9C50D', '#666']);
+  const color2 = useTransform(scrollYProgress, [0.5, 0.55, 0.7, 0.75], ['#666', '#F9C50D', '#F9C50D', '#666']);
+  const color3 = useTransform(scrollYProgress, [0.7, 0.75, 0.9], ['#666', '#F9C50D', '#F9C50D']);
+
+  const bgColor0 = useTransform(scrollYProgress, [0.15, 0.3, 0.35], ['#F9C50D', '#F9C50D', '#ccc']);
+  const bgColor1 = useTransform(scrollYProgress, [0.3, 0.35, 0.5, 0.55], ['#ccc', '#F9C50D', '#F9C50D', '#ccc']);
+  const bgColor2 = useTransform(scrollYProgress, [0.5, 0.55, 0.7, 0.75], ['#ccc', '#F9C50D', '#F9C50D', '#ccc']);
+  const bgColor3 = useTransform(scrollYProgress, [0.7, 0.75, 0.9], ['#ccc', '#F9C50D', '#F9C50D']);
 
   const MyIcon1 = ({width = "57", height = "57"}) => (
       <svg width={width} height={height} viewBox="0 0 65 72" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -50,6 +56,72 @@ const Products = () => {
           style={{backgroundImage: `url(${backgroundImage})`}}
       >
         <h1 className={styles.productTitle}>PRODUCTS</h1>
+      </div>
+
+      <div className={styles.wrapper} ref={ref}>
+        <div className={styles.center1}>
+          <img src={image2} alt="Carbon Steel Pipe"/>
+        </div>
+
+        <motion.div
+            style={{color: color0}}
+            className={styles.annotation}
+        >
+          <div className={styles.pack}>
+            <motion.div
+                className={styles.circle}
+                style={{backgroundColor: bgColor0}}
+            ></motion.div>
+            <p>TOP CONNECTION FLANGE</p>
+          </div>
+          <p>Engineered for secure load mounting with two options: nut lock
+            or flanged connection.</p>
+        </motion.div>
+
+        <motion.div
+            style={{color: color1}}
+            className={styles.annotation1}
+        >
+          <div className={styles.pack}>
+            <motion.div
+                className={styles.circle}
+                style={{ backgroundColor: bgColor1 }}
+            ></motion.div>
+            <p>CARBON STEEL ROUND PIPE</p>
+          </div>
+          <p>Carbon Steel Round Pipe, Strong carbon steel pipes (68-115) with hot-dip galvanization
+            for rust-free, long-lasting performance.</p>
+        </motion.div>
+
+        <motion.div
+            style={{color: color2}}
+            className={styles.annotation2}
+        >
+          <div className={styles.pack}>
+            <motion.div
+                className={styles.circle}
+                style={{ backgroundColor: bgColor2 }}
+            ></motion.div>
+            <p>SPIRAL HELIX</p>
+          </div>
+          <p>Engineered for secure load mounting with two options: nut lock
+            or flanged connection</p>
+        </motion.div>
+
+        <motion.div
+            style={{ color: color3 }}
+            className={styles.annotation3}
+        >
+          <div className={styles.pack}>
+            <motion.div
+                className={styles.circle}
+                style={{ backgroundColor: bgColor3 }}
+            ></motion.div>
+            <p>FORGED TIP</p>
+          </div>
+          <p>Hot-formed conical tip built tough to penetrate rocky and
+            dense soils with ease.</p>
+        </motion.div>
       </div>
 
       <div className={styles.section}>
@@ -113,48 +185,6 @@ const Products = () => {
           </div>
         </div>
         <img src={image2} alt="Image 2"/>
-      </div>
-
-      <div className={styles.wrapper}>
-        <div className={styles.center1}>
-          <img src={image2} ref={ref} alt="Carbon Steel Pipe"/>
-        </div>
-
-        <motion.div style={{opacity: topOpacity}} className={styles.annotation}>
-          <div className={styles.pack}>
-            <div className={styles.circle}></div>
-            <p>CARBON STEEL ROUND PIPE</p>
-          </div>
-          <p>Carbon Steel Round Pipe, Strong carbon steel pipes (68-115) with hot-dip galvanization
-            for rust-free, long-lasting performance.</p>
-        </motion.div>
-
-        <motion.div style={{opacity: centerOpacity}} className={styles.annotation1}>
-          <div className={styles.pack}>
-            <div className={styles.circle}></div>
-            <p>TOP CONNECTION FLANGE</p>
-          </div>
-          <p>Engineered for secure load mounting with two options: nut lock
-            or flanged connection.</p>
-        </motion.div>
-
-        <motion.div style={{opacity: centerBottomOpacity}} className={styles.annotation2}>
-          <div className={styles.pack}>
-            <div className={styles.circle}></div>
-            <p>SPIRAL HELIX</p>
-          </div>
-          <p>Engineered for secure load mounting with two options: nut lock
-            or flanged connection</p>
-        </motion.div>
-
-        <motion.div style={{opacity: bottomOpacity}} className={styles.annotation3}>
-          <div className={styles.pack}>
-            <div className={styles.circle}></div>
-            <p>FORGED TIP</p>
-          </div>
-          <p>Hot-formed conical tip built tough to penetrate rocky and
-            dense soils with ease.</p>
-        </motion.div>
       </div>
 
       <div className={styles.center2}>
