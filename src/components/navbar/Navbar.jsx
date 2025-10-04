@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Navbar.module.scss";
-import {useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -38,7 +38,7 @@ const Navbar = () => {
     <>
       <div className={styles.logo}>
         <img
-          src="/src/assets/logo/Mask group.png"
+          src="/assets/logo/Mask-group.png"
           alt="Big Screw Foundation Logo"
           className={styles.navLogo}
         />
@@ -94,35 +94,50 @@ const Navbar = () => {
         </button>
         <ul>
           <li>
-            <a href="/" onClick={handleLinkClick}>Home</a>
+            <a href="/" onClick={handleLinkClick}>
+              Home
+            </a>
           </li>
           <li>
-            <a href="/about" onClick={handleLinkClick}>About Us</a>
+            <a href="/about" onClick={handleLinkClick}>
+              About Us
+            </a>
           </li>
           <li>
-            <a href="/solar" onClick={handleLinkClick}>Solar</a>
+            <a href="/solar" onClick={handleLinkClick}>
+              Solar
+            </a>
           </li>
           <li>
-            <a href="/fencing" onClick={handleLinkClick}>Fencing</a>
+            <a href="/fencing" onClick={handleLinkClick}>
+              Fencing
+            </a>
           </li>
           <li>
-            <a href="/housing" onClick={handleLinkClick}>Housing</a>
+            <a href="/housing" onClick={handleLinkClick}>
+              Housing
+            </a>
           </li>
           <li>
-            <a href="/products" onClick={handleLinkClick}>Products</a>
+            <a href="/products" onClick={handleLinkClick}>
+              Products
+            </a>
           </li>
           <li>
-            <a href="/installation" onClick={handleLinkClick}>Installation</a>
-          </li>
-          {" "}
+            <a href="/installation" onClick={handleLinkClick}>
+              Installation
+            </a>
+          </li>{" "}
           <li>
-            <a href="/contact" onClick={handleLinkClick}>Contact Us</a>
+            <a href="/contact" onClick={handleLinkClick}>
+              Contact Us
+            </a>
           </li>
         </ul>
       </div>
 
-      <div className={styles.screw} onClick={() => navigate('/contact')}>
-        <img src="/src/assets/logo/Screw.png" alt="" />
+      <div className={styles.screw} onClick={() => navigate("/contact")}>
+        <img src="/assets/logo/Screw.png" alt="" />
       </div>
     </>
   );
