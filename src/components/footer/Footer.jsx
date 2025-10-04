@@ -29,7 +29,7 @@ const Footer = () => {
         <div className={styles.columns}>
           <div className={styles.column}>
             <div className={styles.heading}>QUICK LINKS</div>
-            <div className={styles.item}>Let Us Help You</div>
+            {/*<div className={styles.item}>Let Us Help You</div>*/}
             <div
               className={styles.item}
               onClick={() => handleNavigation("/privacyPolicy")}
