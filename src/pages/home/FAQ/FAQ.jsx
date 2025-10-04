@@ -50,12 +50,12 @@ const FAQ = () => {
               <button className={styles.iconBtn}>
                 {openIdx === idx ? (
                   <img
-                    src="/src/assets/home/FAQ/minus.svg"
+                    src="/assets/home/FAQ/minus.svg"
                     className={styles.minus}
                   />
                 ) : (
                   <img
-                    src="/src/assets/home/FAQ/plus.svg"
+                    src="/assets/home/FAQ/plus.svg"
                     className={styles.plus}
                   />
                 )}

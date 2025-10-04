@@ -2,8 +2,8 @@ import styles from "./StatsSection.module.scss";
 
 const data = [
   { value: "17+", label: "Satisfied Client" },
-  { value: "70%", label: "Satisfied Client" },
-  { value: "19+", label: "Satisfied Client" },
+  { value: "96%", label: "Customer Satisfaction" },
+  { value: "19+", label: "Success Projects" },
 ];
 
 const StatsSection = () => (
