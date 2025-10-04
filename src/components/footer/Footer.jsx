@@ -26,7 +26,7 @@ const Footer = () => {
                 <div className={styles.heading}>QUICK LINKS</div>
                 <div className={styles.item}>Let Us Help You</div>
                 <div className={styles.item} onClick={() => handleNavigation('/privacyPolicy')}>Privacy Policy</div>
-                <div className={styles.item}>Terms and Conditions</div>
+                <div className={styles.item} onClick={() => handleNavigation('/termsAndConditions')}>Terms and Conditions</div>
                 <div className={styles.item} onClick={() => handleNavigation('/products')}>Products</div>
                 <div className={styles.item} onClick={() => handleNavigation('/contact')}>Contact Us</div>
               </div>
