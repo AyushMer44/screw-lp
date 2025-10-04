@@ -4,29 +4,29 @@ import Footer from "../../../components/footer/Footer";
 
 const TEAM_MEMBERS = [
   {
-    name: "Name",
-    designation: "Designation",
+    name: "Karandeep Saini",
+    designation: "Founder & CEO",
+    linkedin: "https://www.linkedin.com/in/karandeep-s-saini/",
+    email: "Email ID",
+    image: "/assets/about/karandeep.jpeg",
+  },
+  {
+    name: "Harjith Saini",
+    designation: "Director",
     linkedin: "LinkedIn And",
     email: "Email ID",
     image: "https://avatar.iran.liara.run/public/boy",
   },
   {
-    name: "Name",
-    designation: "Designation",
+    name: "Harjith Saini",
+    designation: "Director",
     linkedin: "LinkedIn And",
     email: "Email ID",
     image: "https://avatar.iran.liara.run/public/boy",
   },
   {
-    name: "Name",
-    designation: "Designation",
-    linkedin: "LinkedIn And",
-    email: "Email ID",
-    image: "https://avatar.iran.liara.run/public/boy",
-  },
-  {
-    name: "Name",
-    designation: "Designation",
+    name: "Harjith Saini",
+    designation: "Director",
     linkedin: "LinkedIn And",
     email: "Email ID",
     image: "https://avatar.iran.liara.run/public/boy",
@@ -48,7 +48,15 @@ const OurTeam = () => (
           <div className={styles.memberInfo}>
             <div>{member.name}</div>
             <div>{member.designation}</div>
-            <div>{member.linkedin}</div>
+            <div>
+              <a
+                href={member.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
+            </div>
             <div>{member.email}</div>
           </div>
         </div>

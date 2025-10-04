@@ -26,7 +26,7 @@
 
 .membersSection {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: center; /* centers grid items within container */
   //  align-items: stretch;
 
@@ -44,13 +44,13 @@
   width: 90%;
   margin: 0% auto;
   text-align: center;
-  //min-width: 180px;
+  // min-width: 180px;
 }
 .hexagon {
-  width: 100%;
-  height: auto;
+  width: 280px;
+  height: 320px;
   background: #e3e3e3;
-  margin-bottom: 18px;
+  margin: 0 auto 18px;
   clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
   display: flex;
   align-items: center;
@@ -64,16 +64,17 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
     transition: transform 0.35s ease; // smooth image scaling too
   }
 
   /* Hover effect */
   &:hover {
-    transform: scale(1.18); // hexagon pops up
+    transform: scale(1.08); // hexagon pops up
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 
     img {
-      transform: scale(1.08); // zoom image slightly
+      transform: scale(1.05); // zoom image slightly
     }
   }
 }
@@ -97,6 +98,14 @@
   font-weight: 500;
   line-height: normal;
   text-transform: capitalize;
+  a {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 .description {
