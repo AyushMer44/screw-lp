@@ -119,7 +119,7 @@ const Navbar = () => {
       </div>
 
       <div className={styles.screw}>
-        <img src="/src/assets/logo/Group 19.png" alt="" />
+        <img src="/src/assets/logo/Screw.png" alt="" />
       </div>
     </>
   );

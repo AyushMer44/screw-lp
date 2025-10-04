@@ -4,9 +4,14 @@ import styles from "../product/Product.module.scss";
 import backgroundImage from "../../assets/about/about-wallpaper.png";
 import image1 from "../../assets/product/image15.png"
 import image2 from "../../assets/product/image16.png"
+import Helic from "../../assets/product/Helic.png"
 import screw1 from "../../assets/product/screw1.png"
 import screw2 from "../../assets/product/screw2.png"
 import screw3 from "../../assets/product/screw3.png"
+import V76 from "../../assets/product/V76.png"
+import V89 from "../../assets/product/V89.png"
+import V114 from "../../assets/product/V114.png"
+import V140 from "../../assets/product/V140.png"
 import screw4 from "../../assets/product/screw4.png"
 import dummy1 from "../../assets/product/dummy1.png"
 import Footer from "../../components/footer/Footer.jsx";
@@ -127,7 +132,7 @@ const Products = () => {
       <div className={styles.section}>
         <p>Ground Screw</p>
         <h3>V/s</h3>
-        <p>Helical Pipes</p>
+        <p>Helical Pile</p>
       </div>
 
       <div className={styles.center}>
@@ -184,7 +189,7 @@ const Products = () => {
             <MyIcon2/>
           </div>
         </div>
-        <img src={image2} alt="Image 2"/>
+        <img src={Helic} alt="Image 2"/>
       </div>
 
       <div className={styles.center2}>
@@ -214,10 +219,22 @@ const Products = () => {
         <div className={styles.first}>
           <p>Extendables</p>
           <div className={styles.cardContainer}>
-            <div className={styles.card}></div>
-            <div className={styles.card}></div>
-            <div className={styles.card}></div>
-            <div className={styles.card}></div>
+            <div className={styles.card}>
+              <img src={V76} alt="V-76"/>
+              <p>V-76</p>
+            </div>
+            <div className={styles.card}>
+              <img src={V89} alt="V-89"/>
+              <p>V-89</p>
+            </div>
+            <div className={styles.card}>
+              <img src={V114} alt="V-114"/>
+              <p>V-114</p>
+            </div>
+            <div className={styles.card}>
+              <img src={V140} alt="V-140"/>
+              <p>V-140</p>
+            </div>
           </div>
         </div>
       </div>

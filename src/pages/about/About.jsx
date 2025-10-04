@@ -1,5 +1,8 @@
 import styles from "./About.module.scss";
 import backgroundImage from "../../assets/about/about-wallpaper.png"; // adjust path accordingly
+import Arrow from "../../assets/about/arrow.svg"; // adjust path accordingly
+import QuestionMark from "../../assets/about/question-mark.svg"; // adjust path accordingly
+import Telescope from "../../assets/about/telescope.svg"; // adjust path accordingly
 import OurTeam from "./ourTeam/OurTeam";
 
 const About = () => {
@@ -31,7 +34,7 @@ const About = () => {
         <div className={styles.cardRow}>
           <div className={styles.card}>
             <div className={styles.iconCircle}>
-              <img src="/src/assets/about/arrow.svg" alt="" />
+              <img src={Arrow} alt="" />
             </div>
             <div className={styles.cardTitle}>Our Mission</div>
             <div className={styles.cardText}>
@@ -41,7 +44,7 @@ const About = () => {
           </div>
           <div className={styles.card}>
             <div className={styles.iconCircle}>
-              <img src="/src/assets/about/question-mark.svg" alt="" />
+              <img src={QuestionMark} alt="" />
             </div>
             <div className={styles.cardTitle}>Why Big Screw</div>
             <div className={styles.cardText}>
@@ -51,7 +54,7 @@ const About = () => {
           </div>
           <div className={styles.card}>
             <div className={styles.iconCircle}>
-              <img src="/src/assets/about/telescope.svg" alt="" />
+              <img src={Telescope} alt="" />
             </div>
             <div className={styles.cardTitle}>Our Commitment</div>
             <div className={styles.cardText}>

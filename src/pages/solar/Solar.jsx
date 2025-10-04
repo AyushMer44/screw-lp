@@ -1,5 +1,9 @@
 import React from "react";
 import backgroundImage from "../../assets/solar/solar.png"; // adjust path accordingly
+import Clock from "../../assets/home/yellowBox/clock-fast.svg"
+import Money from "../../assets/home/yellowBox/money.svg"
+import Sustainable from "../../assets/home/yellowBox/sustainable.svg"
+import Gear from "../../assets/home/yellowBox/gear.svg"
 import styles from "./Solar.module.scss";
 import SolarContent from "./solarContent/SolarContent";
 import WhyChooseSolar from "./whyChosseSolar/WhyChooseSolar";
@@ -27,7 +31,7 @@ const Solar = () => {
             <div className={styles.yellowBox}>
               <div>
                 <img
-                  src="/src/assets/home/yellowBox/clock-fast.svg"
+                  src={Clock}
                   alt=""
                   className={styles.clock}
                 />
@@ -35,7 +39,7 @@ const Solar = () => {
               </div>
               <div>
                 <img
-                  src="/src/assets/home/yellowBox/money.svg"
+                  src={Money}
                   alt=""
                   className={styles.money}
                 />
@@ -43,7 +47,7 @@ const Solar = () => {
               </div>
               <div>
                 <img
-                  src="/src/assets/home/yellowBox/sustainable.svg"
+                  src={Sustainable}
                   alt=""
                   className={styles.sustainable}
                 />
@@ -51,7 +55,7 @@ const Solar = () => {
               </div>
               <div>
                 <img
-                  src="/src/assets/home/yellowBox/gear.svg"
+                  src={Gear}
                   alt=""
                   className={styles.gear}
                 />
