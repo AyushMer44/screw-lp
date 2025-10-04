@@ -1,40 +1,40 @@
 import styles from "./About.module.scss";
-import Home from "../../../assets/home/about/Home.png"
-import Home1 from "../../../assets/home/about/Home1.png"
-import Home2 from "../../../assets/home/about/Home2.png"
-import Home3 from "../../../assets/home/about/Home3.png"
-import Home4 from "../../../assets/home/about/Home5.png"
+import Home from "../../../assets/home/about/Home.png";
+import Home1 from "../../../assets/home/about/Home1.png";
+import Home2 from "../../../assets/home/about/Home2.png";
+import Home3 from "../../../assets/home/about/Home3.png";
+import Home4 from "../../../assets/home/about/Home5.png";
 const About = () => {
   const screwPoints = [
     {
       title: "YEAR ROUND SOLUTION",
       description:
         "Ground screws can be installed in any weather and on almost all soil types. They eliminate delays caused by seasonal restrictions, ensuring projects can continue smoothly year-round.",
-      img: "/src/assets/home/about/calendra.svg",
+      img: "/assets/home/calendra.svg",
     },
     {
       title: "ENVIRONMENTALLY FRIENDLY",
       description:
         "No concrete, no heavy excavation, and minimal soil disturbance. Ground screws reduce carbon footprint and preserve the natural landscape, making them a sustainable foundation choice.",
-      img: "/src/assets/home/about/plant.svg",
+      img: "/assets/home/plant.svg",
     },
     {
       title: "IMMEDIATELY LOADABLE",
       description:
         "Once installed, ground screws are ready to bear load instantly—no curing time required. This makes construction faster and more efficient compared to traditional foundations.",
-      img: "/src/assets/home/about/calendra.svg",
+      img: "/assets/home/calendra.svg",
     },
     {
       title: "NO CONCRETE & NO EXCAVATION",
       description:
         "Ground screws require no digging or pouring concrete. This means less mess, less noise, and no waiting time, while avoiding damage to the surrounding environment.",
-      img: "/src/assets/home/about/concrete.svg",
+      img: "/assets/home/concrete.svg",
     },
     {
       title: "COST EFFECTIVE",
       description:
         "By saving time, labor, and materials, ground screws significantly reduce overall project costs. Their reusability also adds long-term value compared to conventional foundations.",
-      img: "/src/assets/home/about/save-money.svg",
+      img: "/assets/home/save-money.svg",
     },
   ];
 
@@ -62,23 +62,23 @@ const About = () => {
         </div>
         <div className={styles.imageContainer}>
           <div className={`${styles.item} ${styles.tall}`}>
-            <img src={Home} alt="Tall"/>
+            <img src={Home} alt="Tall" />
           </div>
 
           <div className={`${styles.item} ${styles.leftBottom}`}>
-            <img src={Home1} alt="Left Bottom"/>
+            <img src={Home1} alt="Left Bottom" />
           </div>
 
           <div className={styles.item}>
-            <img src={Home3} alt="Right Top"/>
+            <img src={Home3} alt="Right Top" />
           </div>
 
           <div className={styles.item}>
-            <img src={Home2} alt="Right Middle"/>
+            <img src={Home2} alt="Right Middle" />
           </div>
 
           <div className={styles.item}>
-            <img src={Home4} alt="Right Bottom"/>
+            <img src={Home4} alt="Right Bottom" />
           </div>
         </div>
 
