@@ -19,6 +19,11 @@ const Navbar = () => {
     setIsMenuOpen(false); // Close menu when a link is clicked
   };
 
+  const handleNavigate = () => {
+    navigate("/contact");
+    window.scrollTo(0, 0);
+  }
+
   // Lock/unlock body scroll when menu opens/closes
   useEffect(() => {
     if (isMenuOpen) {
@@ -136,7 +141,7 @@ const Navbar = () => {
         </ul>
       </div>
 
-      <div className={styles.screw} onClick={() => navigate("/contact")}>
+      <div className={styles.screw} onClick={handleNavigate}>
         <img src="/assets/logo/Screw.png" alt="" />
       </div>
     </>
