@@ -6,7 +6,7 @@
 }
 
 .title {
-  font-size: 1.8rem;
+  font-size: clamp(1.4rem, 4vw, 1.8rem);
   font-weight: 600;
   margin-bottom: 2rem;
   color: #2c2c2c;
@@ -20,23 +20,11 @@
 
 .card {
   position: relative;
-
   height: 300px;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   cursor: pointer;
-
-  &:hover {
-    .text {
-      transform: translate(-50%, -50%) scale(0.95); /* Scale down the main text */
-    }
-
-    .overlay {
-      opacity: 1; /* Show the overlay text */
-      visibility: visible; /* Make overlay text visible */
-    }
-  }
 
   .image {
     width: 100%;
@@ -52,11 +40,13 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
-    font-size: 2.25rem;
+    font-size: clamp(1.5rem, 4vw, 2.25rem);
     font-weight: 500;
     width: 100%;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-    transition: transform 0.3s ease; /* Smooth transition for scaling */
+    transition: transform 0.3s ease;
+    text-align: center;
+    padding: 0 1rem;
   }
 
   .overlay {
@@ -67,15 +57,28 @@
     width: 80%;
     transform: translate(-50%, -50%);
     color: #fff;
-    font-size: 1.25rem;
+    font-size: clamp(1rem, 3vw, 1.25rem);
     font-weight: 400;
-
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-    opacity: 0; /* Hidden by default */
-    visibility: hidden; /* Hidden by default */
-    transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    text-align: center;
+    padding: 0 0.5rem;
+  }
+
+  &:hover {
+    .text {
+      transform: translate(-50%, -50%) scale(0.95);
+    }
+
+    .overlay {
+      opacity: 1;
+      visibility: visible;
+    }
   }
 }
+
 /* ---------- Responsive ---------- */
 @media (max-width: 768px) {
   .cards {
@@ -87,6 +90,13 @@
   .card {
     width: 100%;
     max-width: 400px;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
+    height: auto; /* auto height for better scaling */
+    cursor: default; /* disable hover effect */
+
+    .overlay {
+      opacity: 1; /* Always visible on mobile */
+      visibility: visible;
+    }
   }
 }
