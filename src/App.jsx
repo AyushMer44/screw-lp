@@ -11,6 +11,7 @@ import Fencing from "./pages/fencing/Fencing.jsx";
 import Housing from "./pages/housing/Housing.jsx";
 import PrivacyPolicy from "./pages/privacyPolicy/PrivacyPolicy.jsx";
 import TermsAndConditions from "./pages/termsAndconditions/TermsAndConditions.jsx";
+import './App.css'
 
 function App() {
   return (
