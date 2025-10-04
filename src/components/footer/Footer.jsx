@@ -36,7 +36,12 @@ const Footer = () => {
             >
               Privacy Policy
             </div>
-            <div className={styles.item}>Terms and Conditions</div>
+            <div
+              className={styles.item}
+              onClick={() => handleNavigation("/termsAndConditions")}
+            >
+              Terms and Conditions
+            </div>
             <div
               className={styles.item}
               onClick={() => handleNavigation("/products")}
