@@ -2,86 +2,144 @@
   background: #f9c50d;
   padding-bottom: 0;
   width: 100%;
+  max-width: 100vw;
   font-family: "Libre Franklin", Arial, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-x: hidden;
 }
 
 .top {
-  width: 80%;
+  width: 90%;
   display: flex;
-
   align-items: flex-start;
   justify-content: space-between;
-  padding: 42px 5vw 120px 5vw;
+  padding: 3rem 2rem 4rem 2rem;
+  gap: 3rem;
 }
 
 .logoBlock {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-right: 1.7rem;
-}
-.logoImg {
-  width: 220px;
-  height: auto;
-}
-.logoText {
-  font-weight: 700;
-  font-size: 1.28rem;
-  letter-spacing: 2px;
-  margin-top: 0.5rem;
-  line-height: 1.1;
+  flex: 0 0 220px;
+
+  .logoImg {
+    width: 220px;
+    height: auto;
+    margin-bottom: 0.8rem;
+  }
+
+  .tagline {
+    font-size: 0.95rem;
+    color: #464646;
+    text-align: center;
+    font-weight: 500;
+    margin: 0;
+  }
 }
 
 .columns {
   display: flex;
-  gap: 6vw;
-  flex: 2;
-  justify-content: center;
+  gap: 3rem;
+  flex: 1;
+  justify-content: space-between;
   align-items: flex-start;
-
-  @media screen and (max-width: 1024px) {
-    gap: 4vw;
-  }
 }
+
 .column {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   font-family: "Reddit Sans", sans-serif;
-  gap: 0.7rem;
+  gap: 0.8rem;
+  flex: 1;
+  min-width: 200px;
+
+  &:first-child {
+    flex: 0 0 auto;
+    min-width: 150px;
+  }
 }
+
 .heading {
-  font-size: 1.3rem;
-  font-weight: 500;
-  margin-bottom: 0.6rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
   letter-spacing: 1px;
-  color: #383838;
+  color: #2c2c2c;
+  text-transform: uppercase;
 }
+
 .item {
-  font-size: 1.28rem;
-  color: #5b5b5b;
+  font-size: 1rem;
+  color: #464646;
   font-weight: 500;
+  cursor: pointer;
+  transition: color 0.2s;
+
+  &:hover {
+    color: #2c2c2c;
+  }
+}
+
+.contactItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  font-size: 0.95rem;
+  color: #464646;
+  line-height: 1.5;
+
+  .icon {
+    font-size: 1rem;
+    color: #2c2c2c;
+    margin-top: 0.2rem;
+    flex-shrink: 0;
+  }
+
+  span {
+    flex: 1;
+  }
+}
+
+.contactDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
 }
 
 .socials {
   display: flex;
-  gap: 2rem;
+  flex-direction: column;
+  gap: 1rem;
   align-items: center;
+  flex: 0 0 auto;
+
+  .heading {
+    margin-bottom: 0;
+  }
 }
+
 .socialIcon {
   background: #ffe57b;
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2.3rem;
+  font-size: 1.8rem;
   color: #212121;
-  transition: background 0.15s;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    background: #ffd54f;
+    transform: translateY(-3px);
+  }
 }
 
 .divider {
@@ -93,62 +151,204 @@
 
 .bottom {
   display: flex;
-  justify-content: flex-end; /* aligns child to the right */
-  padding: 1.4rem 5vw 1rem 5vw;
-  width: 85%; /* ensure it takes full width */
+  justify-content: center;
+  padding: 1.5rem 2rem 1.5rem 2rem;
+  width: 100%;
 }
 
 .copyright {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #464646;
   letter-spacing: 0.04em;
   font-family: "Reddit sans", sans-serif;
-  text-align: right; /* align text to right */
+  text-align: center;
 }
 
-/* Responsive tweaks */
-@media (max-width: 900px) {
+/* ============ TABLET RESPONSIVE (768px - 1024px) ============ */
+@media (max-width: 1024px) {
   .top {
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    padding: 3rem 2vw 1rem 2vw;
+    flex-wrap: wrap;
+    padding: 2.5rem 1.5rem 3rem 1.5rem;
+    gap: 2.5rem;
   }
-  .columns {
-    gap: 2rem;
-  }
-  .bottom {
-    padding: 1.2rem 2vw 1rem 2vw;
-    justify-content: center;
-  }
-}
-@media (max-width: 600px) {
-  .top {
-    flex-direction: column;
-    gap: 1rem;
-    padding: 2rem 1vw 1rem 1vw;
-  }
+
   .logoBlock {
-    margin: 0;
+    flex: 0 0 100%;
     align-items: center;
+    text-align: center;
+
+    .logoImg {
+      width: 180px;
+    }
   }
+
   .columns {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+    flex: 1 1 100%;
+    gap: 2rem;
+    justify-content: space-between;
   }
+
+  .column {
+    min-width: 150px;
+  }
+
+  .socials {
+    flex: 0 0 auto;
+    margin-top: 1rem;
+  }
+
   .heading {
-    font-size: 1.2rem;
-  }
-  .item {
     font-size: 1rem;
   }
+
+  .item,
+  .contactItem {
+    font-size: 0.9rem;
+  }
+}
+
+/* ============ MOBILE RESPONSIVE (< 768px) ============ */
+@media (max-width: 768px) {
+  .top {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 1.5rem 2rem 1.5rem;
+    width: 95%;
+  }
+
+  .logoBlock {
+    margin-bottom: 1rem;
+
+    .logoImg {
+      width: 160px;
+    }
+
+    .tagline {
+      font-size: 0.9rem;
+    }
+  }
+
+  .columns {
+    flex-direction: column;
+    width: 100%;
+    gap: 2rem;
+  }
+
+  .column {
+    width: 100%;
+    align-items: flex-start;
+    padding: 0 1rem;
+
+    &:first-child {
+      align-items: center;
+      text-align: center;
+
+      .item {
+        text-align: center;
+      }
+    }
+  }
+
+  .heading {
+    font-size: 1.05rem;
+    align-self: flex-start;
+  }
+
+  .item {
+    font-size: 0.95rem;
+  }
+
+  .contactItem {
+    font-size: 0.9rem;
+    gap: 0.6rem;
+
+    .icon {
+      font-size: 0.95rem;
+    }
+  }
+
+  .socials {
+    margin-top: 1rem;
+
+    .heading {
+      align-self: center;
+    }
+  }
+
   .socialIcon {
     width: 55px;
     height: 55px;
     font-size: 1.6rem;
   }
+
   .divider {
-    width: 99%;
+    width: 95%;
+  }
+
+  .bottom {
+    padding: 1.2rem 1rem 1.2rem 1rem;
+  }
+
+  .copyright {
+    font-size: 0.9rem;
+  }
+}
+
+/* ============ SMALL MOBILE (< 480px) ============ */
+@media (max-width: 480px) {
+  .top {
+    padding: 1.5rem 1rem 1.5rem 1rem;
+    gap: 1.5rem;
+  }
+
+  .logoBlock {
+    .logoImg {
+      width: 140px;
+    }
+
+    .tagline {
+      font-size: 0.85rem;
+    }
+  }
+
+  .columns {
+    gap: 1.5rem;
+  }
+
+  .column {
+    padding: 0 0.5rem;
+  }
+
+  .heading {
+    font-size: 1rem;
+  }
+
+  .item {
+    font-size: 0.88rem;
+  }
+
+  .contactItem {
+    font-size: 0.85rem;
+    gap: 0.5rem;
+
+    .icon {
+      font-size: 0.9rem;
+    }
+  }
+
+  .socialIcon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.4rem;
+  }
+
+  .copyright {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+
+  .divider {
+    width: 98%;
   }
 }
