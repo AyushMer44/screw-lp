@@ -1,5 +1,4 @@
 .contactUs {
-  font-family: "Segoe UI", Arial, sans-serif;
   color: #222;
   width: 100%;
   overflow-x: hidden;
@@ -218,6 +217,7 @@
   padding: 0;
   font-size: 1.2rem;
   color: #f1c40f;
+  //width: 12rem;
 
   @media (max-width: 480px) {
     font-size: 1rem;
