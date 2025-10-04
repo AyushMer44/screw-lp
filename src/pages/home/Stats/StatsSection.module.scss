@@ -2,21 +2,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: clamp(
-    1rem,
-    10vw,
-    180px
-  ); // min 1rem, max 180px, scales smoothly with viewport width
+  gap: clamp(1rem, 10vw, 180px);
   width: 100%;
-  padding: 28px 0px 100px 0px;
+  padding: 28px 0 100px;
+
+  flex-wrap: wrap; // ✅ allows wrapping on smaller screens
 
   @media (max-width: 900px) {
-    gap: 2rem;
-    padding: 2rem 0;
+    gap: 3rem;
+    padding: 2.5rem 0 4rem;
   }
+
   @media (max-width: 600px) {
     flex-direction: column;
     gap: 2rem;
+    padding: 2rem 0;
   }
 }
 
@@ -24,23 +24,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 175px;
+  min-width: 140px; // ✅ slight tweak for better mobile fit
+  flex: 1 1 160px; // ✅ allows flexible sizing per row
 }
 
 .statValue {
-  font-size: 6rem;
+  font-size: clamp(2.5rem, 6vw, 6rem); // ✅ scales smoothly
   color: #ffd700;
   font-weight: 700;
   line-height: 1.1;
   font-family: "Poppins", sans-serif;
+  text-align: center;
 }
 
 .statLabel {
   margin-top: 1.1rem;
-  font-size: 2.1rem;
+  font-size: clamp(1.2rem, 3vw, 2.1rem); // ✅ scales well on mobile
   color: #555;
   font-family: "Poppins", sans-serif;
-
   font-weight: 500;
   letter-spacing: 0.02em;
   text-align: center;
