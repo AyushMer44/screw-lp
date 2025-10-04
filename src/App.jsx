@@ -9,6 +9,8 @@ import Products from "./pages/product/Products";
 import Install from "./pages/insatallation/Install";
 import Fencing from "./pages/fencing/Fencing.jsx";
 import Housing from "./pages/housing/Housing.jsx";
+import PrivacyPolicy from "./pages/privacyPolicy/PrivacyPolicy.jsx";
+import TermsAndConditions from "./pages/termsAndconditions/TermsAndConditions.jsx";
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/products" element={<Products />} />
         <Route path="/installation" element={<Install />} />
+          <Route path="/privacyPolicy" element={<PrivacyPolicy/>}/>
+          <Route path="/termsAndConditions" element={<TermsAndConditions/>}/>
       </Routes>
     </BrowserRouter>
   );
