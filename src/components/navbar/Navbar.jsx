@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Navbar.module.scss";
+import {useNavigate} from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const navigate = useNavigate();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -54,10 +57,10 @@ const Navbar = () => {
               <a href="/solar">Solar</a>
             </li>
             <li>
-              <a href="#about">Fencing</a>
+              <a href="/fencing">Fencing</a>
             </li>
             <li>
-              <a href="#about">Housing</a>
+              <a href="/housing">Housing</a>
             </li>
             <li>
               <a href="/products">Products</a>
@@ -100,10 +103,10 @@ const Navbar = () => {
             <a href="/solar" onClick={handleLinkClick}>Solar</a>
           </li>
           <li>
-            <a href="#about" onClick={handleLinkClick}>Fencing</a>
+            <a href="/fencing" onClick={handleLinkClick}>Fencing</a>
           </li>
           <li>
-            <a href="#about" onClick={handleLinkClick}>Housing</a>
+            <a href="/housing" onClick={handleLinkClick}>Housing</a>
           </li>
           <li>
             <a href="/products" onClick={handleLinkClick}>Products</a>
@@ -118,7 +121,7 @@ const Navbar = () => {
         </ul>
       </div>
 
-      <div className={styles.screw}>
+      <div className={styles.screw} onClick={() => navigate('/contact')}>
         <img src="/src/assets/logo/Screw.png" alt="" />
       </div>
     </>
