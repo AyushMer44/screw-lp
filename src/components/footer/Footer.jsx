@@ -73,7 +73,7 @@ const Footer = () => {
               </div>
               <div className={styles.contactItem}>
                 <FaEnvelope className={styles.icon} />
-                <span>contact@bigscrew.com</span>
+                <span>sales@bigscrew.in</span>
               </div>
             </div>
 
