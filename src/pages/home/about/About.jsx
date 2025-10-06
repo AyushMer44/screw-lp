@@ -54,8 +54,8 @@ const About = () => {
             our knowledge and best practices with an international network of
             engineers, manufacturers, and building professionals. Our attention
             to detail and focused collaboration allows us to offer reliable,
-            reputable solutions supported by our expert services. American
-            Ground Screw is just not ground anchors and anchor screws; we are
+            reputable solutions supported by our expert services. Big Screw is
+            just not ground anchors and anchor screws; we are
             also a resource of knowledge and advancement for all those seeking
             up-to-code engineering solutions
           </p>

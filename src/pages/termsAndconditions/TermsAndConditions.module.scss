@@ -13,6 +13,8 @@ $shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
 $shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
 $shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.3);
 
+@use "sass:color";
+
 // Mixins
 @mixin gradient-bg {
   background: linear-gradient(135deg, $primary-color 0%, $primary-dark 100%);
@@ -314,7 +316,7 @@ $shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.3);
   }
 
   &:hover {
-    background: lighten($bg-light, 1%);
+    background: color.scale($bg-light, $lightness: 5%);
     transform: translateX(5px);
     box-shadow: $shadow-sm;
   }

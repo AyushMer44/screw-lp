@@ -20,7 +20,7 @@ const Footer = () => {
         <div className={styles.top}>
           <div className={styles.logoBlock}>
             <img
-                src="/assets/logo/big-screw-logo.png"
+                src="/assets/logo/big-screw-logo1.png"
                 alt="Big Screw Solutions Logo"
                 className={styles.logoImg}
             />
