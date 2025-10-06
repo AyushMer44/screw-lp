@@ -183,14 +183,17 @@
 
 .cardContainer {
   display: flex;
-  justify-content: space-evenly;
-  padding: 2rem 1rem 2rem 5rem;
+  padding: 2rem;
   margin-bottom: 4rem;
+  justify-content: space-around;
 
   .card {
     display: flex;
     gap: 1rem;
-    width: 95%;
+    width: fit-content;
+    @media (max-width: 1000px) {
+      width: 95%;
+    }
   }
 
   @media (max-width: 768px) {
