@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./OurTeam.module.scss";
-import Footer from "../../../components/footer/Footer";
 
 const TEAM_MEMBERS = [
   {
@@ -73,7 +72,6 @@ const OurTeam = () => (
         with precision, efficiency, and care for the environment.
       </p>
     </div>
-    <Footer />
   </div>
 );
 
