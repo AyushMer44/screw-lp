@@ -142,7 +142,7 @@ const Navbar = () => {
       </div>
 
       <div className={styles.screw} onClick={handleNavigate}>
-        <img src="/assets/logo/Screw.png" alt="" />
+        <img src="/assets/logo/Helical.png" alt="" />
       </div>
     </>
   );

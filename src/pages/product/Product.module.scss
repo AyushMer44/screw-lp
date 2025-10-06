@@ -68,7 +68,7 @@
 
     img {
       width: 14vw;
-      height: 120vh;
+      height: 90vh;
 
       &:nth-of-type(1) {
         padding-left: 4rem;
@@ -358,7 +358,7 @@
           img {
             height: 12.5rem;
             width: 11rem;
-            margin-left: 2rem;
+            margin-left: 2.5rem;
             transform: translateY(-3px);
             transition: transform 0.3s ease;
             transform-origin: bottom center;
@@ -370,10 +370,14 @@
 
           p {
             position: absolute;
-            top: 6.6rem;
+            top: 8rem;
             left: 1rem;
-            font-size: 2.4rem;
+            font-size: 2rem;
             color: #ffffff;
+
+            span{
+              font-size: 2.4rem;
+            }
           }
         }
       }

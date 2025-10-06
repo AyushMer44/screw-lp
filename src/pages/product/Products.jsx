@@ -3,15 +3,13 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import styles from "../product/Product.module.scss";
 import backgroundImage from "../../assets/about/about-wallpaper.png";
 import image1 from "../../assets/product/image15.png"
+import newScrew from "../../assets/product/NewScrew.png"
 import image2 from "../../assets/product/image16.png"
-import Helic from "../../assets/product/Helic.png"
+import Helic from "../../assets/product/HelicNew.png"
 import screw1 from "../../assets/product/screw1.png"
 import screw2 from "../../assets/product/screw2.png"
 import screw3 from "../../assets/product/screw3.png"
-import V76 from "../../assets/product/V76.png"
-import V89 from "../../assets/product/V89.png"
-import V114 from "../../assets/product/V114.png"
-import V140 from "../../assets/product/V140.png"
+import V76 from "/assets/product/Extendable.png"
 import screw4 from "../../assets/product/screw4.png"
 import dummy1 from "../../assets/product/dummy1.png"
 import Footer from "../../components/footer/Footer.jsx";
@@ -136,7 +134,7 @@ const Products = () => {
       </div>
 
       <div className={styles.center}>
-        <img src={image1} alt="Image 1"/>
+        <img src={newScrew} alt="Image 1"/>
         <div className={styles.middleContainer}>
           <div className={styles.middle}>
             <MyIcon1/>
@@ -199,19 +197,19 @@ const Products = () => {
           <div className={styles.cardContainer}>
             <div className={styles.card}>
               <img src={screw1} alt="Screw 1"/>
-              <p>076</p>
+              <p><span>⌀</span>76</p>
             </div>
             <div className={styles.card}>
-              <img src={screw2} alt="Screw 2"/>
-              <p>089</p>
+              <img src={screw1} alt="Screw 2"/>
+              <p><span>⌀</span>89</p>
             </div>
             <div className={styles.card}>
-              <img src={screw3} alt="Screw 3"/>
-              <p>0114</p>
+              <img src={screw1} alt="Screw 3"/>
+              <p><span>⌀</span>104</p>
             </div>
             <div className={styles.card}>
-              <img src={screw4} alt="Screw 4"/>
-              <p>0140</p>
+              <img src={screw1} alt="Screw 4"/>
+              <p><span>⌀</span>114</p>
             </div>
           </div>
         </div>
@@ -224,76 +222,76 @@ const Products = () => {
               <p>V-76</p>
             </div>
             <div className={styles.card}>
-              <img src={V89} alt="V-89"/>
+              <img src={V76} alt="V-89"/>
               <p>V-89</p>
             </div>
             <div className={styles.card}>
-              <img src={V114} alt="V-114"/>
-              <p>V-114</p>
+              <img src={V76} alt="V-104"/>
+              <p>V-104</p>
             </div>
             <div className={styles.card}>
-              <img src={V140} alt="V-140"/>
-              <p>V-140</p>
+              <img src={V76} alt="V-114"/>
+              <p>V-114</p>
             </div>
           </div>
         </div>
       </div>
 
-      <div className={styles.center3}>
-        <h2>CASE STUDY</h2>
+      {/*<div className={styles.center3}>*/}
+      {/*  <h2>CASE STUDY</h2>*/}
 
-        <div className={styles.parent1}>
-          <div className={styles.child1}>
-            <img src={dummy1} alt="Image"/>
-          </div>
-          <article className={styles.child2}>
-            If you've worked with ground screws before, chances are we made them. We were
-            one of the world's first manufacturers of the technology and we continue to set
-            the global standard for quality and performance. Our approach is built on collaboration
-            : we share our knowledge and best practices with an international networks of engineers,
-            manufacturers, and building professionals. Our attention to detail and focused collaboration
-            allows us to offer reliable, reputable solutions supported by our expert services.
-            American Ground Screw is just not ground anchors and anchor screws; we are also a
-            resource of knowledge and advancement for all those seeking up-to-code engineering solutions.
-          </article>
-        </div>
+      {/*  <div className={styles.parent1}>*/}
+      {/*    <div className={styles.child1}>*/}
+      {/*      <img src={dummy1} alt="Image"/>*/}
+      {/*    </div>*/}
+      {/*    <article className={styles.child2}>*/}
+      {/*      If you've worked with ground screws before, chances are we made them. We were*/}
+      {/*      one of the world's first manufacturers of the technology and we continue to set*/}
+      {/*      the global standard for quality and performance. Our approach is built on collaboration*/}
+      {/*      : we share our knowledge and best practices with an international networks of engineers,*/}
+      {/*      manufacturers, and building professionals. Our attention to detail and focused collaboration*/}
+      {/*      allows us to offer reliable, reputable solutions supported by our expert services.*/}
+      {/*      American Ground Screw is just not ground anchors and anchor screws; we are also a*/}
+      {/*      resource of knowledge and advancement for all those seeking up-to-code engineering solutions.*/}
+      {/*    </article>*/}
+      {/*  </div>*/}
 
-        <div className={styles.parent2}>
-          <article className={styles.child2}>
-            If you've worked with ground screws before, chances are we made them. We were
-            one of the world's first manufacturers of the technology and we continue to set
-            the global standard for quality and performance. Our approach is built on collaboration
-            : we share our knowledge and best practices with an international networks of engineers,
-            manufacturers, and building professionals. Our attention to detail and focused collaboration
-            allows us to offer reliable, reputable solutions supported by our expert services.
-            American Ground Screw is just not ground anchors and anchor screws; we are also a
-            resource of knowledge and advancement for all those seeking up-to-code engineering solutions.
-          </article>
-          <div className={styles.child1}>
-            <img src={dummy1} alt="Image"/>
-          </div>
-        </div>
-      </div>
+      {/*  <div className={styles.parent2}>*/}
+      {/*    <article className={styles.child2}>*/}
+      {/*      If you've worked with ground screws before, chances are we made them. We were*/}
+      {/*      one of the world's first manufacturers of the technology and we continue to set*/}
+      {/*      the global standard for quality and performance. Our approach is built on collaboration*/}
+      {/*      : we share our knowledge and best practices with an international networks of engineers,*/}
+      {/*      manufacturers, and building professionals. Our attention to detail and focused collaboration*/}
+      {/*      allows us to offer reliable, reputable solutions supported by our expert services.*/}
+      {/*      American Ground Screw is just not ground anchors and anchor screws; we are also a*/}
+      {/*      resource of knowledge and advancement for all those seeking up-to-code engineering solutions.*/}
+      {/*    </article>*/}
+      {/*    <div className={styles.child1}>*/}
+      {/*      <img src={dummy1} alt="Image"/>*/}
+      {/*    </div>*/}
+      {/*  </div>*/}
+      {/*</div>*/}
 
-      <div className={styles.center4}>
-        <h2>EXPERIMENTS</h2>
+      {/*<div className={styles.center4}>*/}
+      {/*  <h2>EXPERIMENTS</h2>*/}
 
-        <div className={styles.parent}>
-          <article className={styles.child2}>
-            If you've worked with ground screws before, chances are we made them. We were
-            one of the world's first manufacturers of the technology and we continue to set
-            the global standard for quality and performance. Our approach is built on collaboration
-            : we share our knowledge and best practices with an international networks of engineers,
-            manufacturers, and building professionals. Our attention to detail and focused collaboration
-            allows us to offer reliable, reputable solutions supported by our expert services.
-            American Ground Screw is just not ground anchors and anchor screws; we are also a
-            resource of knowledge and advancement for all those seeking up-to-code engineering solutions.
-          </article>
-          <div className={styles.child1}>
-            <img src={dummy1} alt="Image"/>
-          </div>
-        </div>
-      </div>
+      {/*  <div className={styles.parent}>*/}
+      {/*    <article className={styles.child2}>*/}
+      {/*      If you've worked with ground screws before, chances are we made them. We were*/}
+      {/*      one of the world's first manufacturers of the technology and we continue to set*/}
+      {/*      the global standard for quality and performance. Our approach is built on collaboration*/}
+      {/*      : we share our knowledge and best practices with an international networks of engineers,*/}
+      {/*      manufacturers, and building professionals. Our attention to detail and focused collaboration*/}
+      {/*      allows us to offer reliable, reputable solutions supported by our expert services.*/}
+      {/*      American Ground Screw is just not ground anchors and anchor screws; we are also a*/}
+      {/*      resource of knowledge and advancement for all those seeking up-to-code engineering solutions.*/}
+      {/*    </article>*/}
+      {/*    <div className={styles.child1}>*/}
+      {/*      <img src={dummy1} alt="Image"/>*/}
+      {/*    </div>*/}
+      {/*  </div>*/}
+      {/*</div>*/}
 
       <Footer/>
     </div>

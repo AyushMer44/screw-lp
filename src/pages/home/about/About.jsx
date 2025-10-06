@@ -2,7 +2,7 @@ import styles from "./About.module.scss";
 import Home from "../../../assets/home/about/Home.png";
 import Home1 from "../../../assets/home/about/Home1.png";
 import Home2 from "../../../assets/home/about/Home2.png";
-import Home3 from "../../../assets/home/about/Home3.png";
+import Home3 from "/assets/home/drill.jpeg";
 import Home4 from "../../../assets/home/about/Home5.png";
 const About = () => {
   const screwPoints = [
