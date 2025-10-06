@@ -132,25 +132,6 @@ const Contact = () => {
       <div className={styles.cardContainer}>
         <div className={styles.card}>
           <svg
-            width="34"
-            height="34"
-            viewBox="0 0 46 46"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M23.0002 22.0413C21.7293 22.0413 20.5106 21.5365 19.6119 20.6379C18.7133 19.7393 18.2085 18.5205 18.2085 17.2497C18.2085 15.9788 18.7133 14.7601 19.6119 13.8615C20.5106 12.9628 21.7293 12.458 23.0002 12.458C24.271 12.458 25.4898 12.9628 26.3884 13.8615C27.287 14.7601 27.7918 15.9788 27.7918 17.2497C27.7918 17.8789 27.6679 18.502 27.4271 19.0834C27.1863 19.6647 26.8333 20.1929 26.3884 20.6379C25.9434 21.0828 25.4152 21.4358 24.8339 21.6766C24.2525 21.9174 23.6294 22.0413 23.0002 22.0413ZM23.0002 3.83301C19.4418 3.83301 16.0293 5.24655 13.5131 7.76266C10.997 10.2788 9.5835 13.6914 9.5835 17.2497C9.5835 27.3122 23.0002 42.1663 23.0002 42.1663C23.0002 42.1663 36.4168 27.3122 36.4168 17.2497C36.4168 13.6914 35.0033 10.2788 32.4872 7.76266C29.9711 5.24655 26.5585 3.83301 23.0002 3.83301Z"
-              fill="#353535"
-            />
-          </svg>
-
-          <div>
-            <p className={styles.p1}>Middle East Office</p>
-            <p className={styles.p2}>Dubai, U.A.E</p>
-          </div>
-        </div>
-        <div className={styles.card}>
-          <svg
             width="42"
             height="40"
             viewBox="0 0 47 46"
@@ -196,7 +177,7 @@ const Contact = () => {
 
           <div>
             <p className={styles.p1}>Email</p>
-            <p className={styles.p2}>contact@rajoggroundscrew.com</p>
+            <p className={styles.p2}>contact@bigscrew.com</p>
           </div>
         </div>
         <div className={styles.card}>
