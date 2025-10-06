@@ -24,7 +24,7 @@ const Footer = () => {
                 alt="Big Screw Solutions Logo"
                 className={styles.logoImg}
             />
-            <p className={styles.tagline}>Building Foundations That Last</p>
+            <p className={styles.tagline}>Foundation of the Future</p>
           </div>
 
           <div className={styles.columns}>

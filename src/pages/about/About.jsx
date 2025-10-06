@@ -22,14 +22,14 @@ const About = () => {
 
       <div className={styles.contentSection}>
         <div className={styles.topText}>
-          Welcome to <strong> BIGSCREW</strong> — India’s largest manufacturer
+          Welcome to <strong> BIGSCREW SOLUTIONS</strong> — India’s largest manufacturer
           of ground screws and accessories. With over four decades of experience
           in sheet metal component manufacturing, machining, and bulk
           fabrication, we have become a trusted partner for durable and
           sustainable foundation solutions. <br />
           <br />
           As the first Indian company to scale up ground screw production,
-          <strong> BIGSCREW</strong> leads the industry with a blend of
+          <strong> BIGSCREW SOLUTIONS</strong> leads the industry with a blend of
           innovation, automation, and quality. Our in-house facilities include
           <strong>
             {" "}

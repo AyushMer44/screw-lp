@@ -16,11 +16,10 @@ const Home = () => {
     <div className={styles.home}>
       <div className={styles.content}>
         <div className={styles.heading}>
-          BIG <span> SCREW</span>
-          COMPANY <br /> FOUNDATION
+          BIG <span> SCREW</span> SOLUTIONS
         </div>
         <div className={styles.description}>
-          Big Screw Company, the pioneering force in revolutionizing groundwork
+          Big Screw Solutions, the pioneering force in revolutionizing groundwork
           solutions in India. As the first <br />
           manufacturers to scale up production of ground screws within the
           country, we have redefined <br /> efficiency and reliability in

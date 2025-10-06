@@ -177,7 +177,7 @@ const Contact = () => {
 
           <div>
             <p className={styles.p1}>Email</p>
-            <p className={styles.p2}>contact@bigscrew.com</p>
+            <p className={styles.p2}>sales@bigscrew.in</p>
           </div>
         </div>
         <div className={styles.card}>
