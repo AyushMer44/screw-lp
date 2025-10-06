@@ -20,11 +20,25 @@ const Install = () => {
         <h2 className={styles.subtitle}>Glimpse Of Installation</h2>
 
         <div className={styles.imageGrid}>
-          <div className={styles.div1}>1</div>
-          <div className={styles.div2}>2</div>
-          <div className={styles.div3}>3</div>
-          <div className={styles.div4}>4</div>
-          <div className={styles.div5}>5</div>
+          <div className={styles.div1}>
+            <img src="/assets/installation/1.jpg" alt="1" />
+          </div>
+          <div className={styles.div2}>
+            {" "}
+            <img src="/assets/installation/2.jpg" alt="1" />
+          </div>
+          <div className={styles.div3}>
+            {" "}
+            <img src="/assets/installation/3.jpg" alt="1" />
+          </div>
+          <div className={styles.div4}>
+            {" "}
+            <img src="/assets/installation/4.jpg" alt="1" />
+          </div>
+          <div className={styles.div5}>
+            {" "}
+            <img src="/assets/installation/5.jpg" alt="1" />
+          </div>
         </div>
       </div>
 
