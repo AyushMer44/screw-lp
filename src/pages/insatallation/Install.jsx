@@ -1,5 +1,5 @@
 import React from "react";
-import backgroundImage from "../../assets/about/about-wallpaper.png";
+import backgroundImage from "/assets/about/back.png";
 import styles from "./Install.module.scss";
 import Footer from "../../components/footer/Footer";
 
@@ -12,7 +12,7 @@ const Install = () => {
           style={{ backgroundImage: `url(${backgroundImage})` }}
         >
           <div className={styles.overlay} />
-          <h1 className={styles.title}>Installation</h1>
+          <h1 className={styles.title}>INSTALLATION</h1>
         </div>
       </div>
 

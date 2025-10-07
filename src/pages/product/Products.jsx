@@ -1,7 +1,7 @@
 import React, {useRef} from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import styles from "../product/Product.module.scss";
-import backgroundImage from "../../assets/about/about-wallpaper.png";
+import backgroundImage from "/assets/about/back.png";
 import image1 from "../../assets/product/image15.png"
 import newScrew from "../../assets/product/NewScrew.png"
 import image2 from "../../assets/product/image16.png"

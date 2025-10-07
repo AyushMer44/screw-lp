@@ -1,5 +1,5 @@
 import styles from "./About.module.scss";
-import backgroundImage from "../../assets/about/about-wallpaper.png"; // adjust path accordingly
+import backgroundImage from "/assets/about/back.png"; // adjust path accordingly
 import Arrow from "../../assets/about/arrow.svg"; // adjust path accordingly
 import QuestionMark from "../../assets/about/question-mark.svg"; // adjust path accordingly
 import Telescope from "../../assets/about/telescope.svg"; // adjust path accordingly

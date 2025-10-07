@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Housing.module.scss";
-import backgroundImage from "../../assets/about/about-wallpaper.png";
+import backgroundImage from "/assets/about/back.png";
 import Footer from "../../components/footer/Footer.jsx";
 
 const Housing = () => {
@@ -12,9 +12,9 @@ const Housing = () => {
                     style={{ backgroundImage: `url(${backgroundImage})` }}
                 >
                     <h1 className={styles.housingTitle}>HOUSING</h1>
-                    <p className={styles.subtitle}>
-                        Solid Foundations for Modern Living Spaces
-                    </p>
+                    {/*<p className={styles.subtitle}>*/}
+                    {/*    Solid Foundations for Modern Living Spaces*/}
+                    {/*</p>*/}
                 </div>
 
                 <div className={styles.introSection}>

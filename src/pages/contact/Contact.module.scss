@@ -14,16 +14,37 @@
     border-radius: 0 0 80px 80px;
     width: 100%;
 
+    @media (max-width: 1140px) {
+      height: 60vh;
+      border-radius: 0 0 60px 60px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity (0.5 = 50% dark) */
+      border-radius: inherit;
+      z-index: 1;
+    }
+
     .contactTitle {
       position: relative;
       color: #fff;
       font-size: 3rem;
-      font-weight: bold;
-      font-family: "ramaraj";
+      font-weight: 600;
       letter-spacing: 2px;
       z-index: 2;
       text-align: center;
       margin-top: 6rem;
+
+      @media (max-width: 1140px) {
+        font-size: 2.5rem;
+        margin-top: 4rem;
+      }
 
       @media (max-width: 768px) {
         font-size: 2rem; /* scale down on tablets */

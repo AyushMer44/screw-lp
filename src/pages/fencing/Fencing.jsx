@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Fencing.module.scss";
-import backgroundImage from "../../assets/about/about-wallpaper.png";
+import backgroundImage from "/assets/about/back.png";
 import First from "../../assets/home/about/Home1.png";
 import Second from "../../assets/home/Fencing.png";
 import Third from "../../assets/home/Mount.png";
@@ -15,9 +15,9 @@ const Fencing = () => {
                     style={{ backgroundImage: `url(${backgroundImage})` }}
                 >
                     <h1 className={styles.fencingTitle}>FENCING</h1>
-                    <p className={styles.subtitle}>
-                        Strong, Quick & Reliable Fencing Foundations
-                    </p>
+                    {/*<p className={styles.subtitle}>*/}
+                    {/*    Strong, Quick & Reliable Fencing Foundations*/}
+                    {/*</p>*/}
                 </div>
 
                 <div className={styles.introSection}>

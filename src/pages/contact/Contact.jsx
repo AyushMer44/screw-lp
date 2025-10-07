@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import styles from "../contact/Contact.module.scss";
-import backgroundImage from "../../assets/about/about-wallpaper.png";
+import backgroundImage from "/assets/about/back.png";
 import Footer from "../../components/footer/Footer.jsx";
 
 const Contact = () => {

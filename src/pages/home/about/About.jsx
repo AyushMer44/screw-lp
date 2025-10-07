@@ -108,6 +108,23 @@ const About = () => {
             ))}
           </div>
         </div>
+
+        {/* Our Promise Section */}
+        <div className={styles.promiseSection}>
+          <h3 className={styles.promiseHeading}>
+            <span className={styles.promiseBullet}>●</span> OUR PROMISE
+          </h3>
+          <p className={styles.promiseText}>
+            Every BigScrew foundation is built to last — combining{" "}
+            <span className={styles.promiseHighlight}>engineering accuracy</span>,{" "}
+            <span className={styles.promiseHighlight}>environmental responsibility</span>,
+            and <span className={styles.promiseHighlight}>global performance standards</span>.
+          </p>
+          <p className={styles.promiseTagline}>
+            We don't just make screws; we create{" "}
+            <span className={styles.promiseHighlight}>the foundation of the future</span>.
+          </p>
+        </div>
       </div>
   );
 };
