@@ -90,7 +90,7 @@ const Footer = () => {
                   <FaLinkedinIn />
                 </a>
                 <a
-                    href="https://www.instagram.com/bigscrew.solutions/"
+                    href="https://www.instagram.com/bigscrew_india?igsh=M2pic2YxN2wzdWh2&utm_source=qr"
                     target="_blank"
                     rel="noopener noreferrer"
                     className={styles.socialIcon}

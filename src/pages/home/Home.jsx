@@ -18,12 +18,10 @@ const Home = () => {
         <div className={styles.heading}>
           BIG <span> SCREW</span> SOLUTIONS
         </div>
+        <div className={styles.subheading}>Foundation of the Future</div>
         <div className={styles.description}>
-          Big Screw Solutions, the pioneering force in revolutionizing groundwork
-          solutions in India. As the first <br />
-          manufacturers to scale up production of ground screws within the
-          country, we have redefined <br /> efficiency and reliability in
-          construction projects
+          Where decades of experience meet advanced automation — redefining how the world <br/>
+          builds with reliable, sustainable screw-pile technology.
         </div>
       </div>
       <div className={styles.yellowBoxContainer}>

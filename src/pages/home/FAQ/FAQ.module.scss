@@ -2,8 +2,6 @@
   display: flex;
   width: 90%;
   justify-content: space-between;
-
-  padding: 0rem 0rem 100px 0px;
   margin: 4%;
 }
 
@@ -21,7 +19,7 @@
 .title {
   font-size: 3.5rem;
   line-height: 4.5rem;
-  margin-bottom: 0rem;
+  margin-bottom: 0;
   color: #161616;
   letter-spacing: 2px;
 }
