@@ -196,19 +196,19 @@ const Products = () => {
           <p>Fixed Flange</p>
           <div className={styles.cardContainer}>
             <div className={styles.card}>
-              <img src={screw1} alt="Screw 1"/>
+              <img src='/assets/product/OurScrew1.png' alt="Screw 1"/>
               <p><span>⌀</span>76</p>
             </div>
             <div className={styles.card}>
-              <img src={screw1} alt="Screw 2"/>
+              <img src='/assets/product/OurScrew1.png' alt="Screw 2"/>
               <p><span>⌀</span>89</p>
             </div>
             <div className={styles.card}>
-              <img src={screw1} alt="Screw 3"/>
+              <img src='/assets/product/OurScrew1.png' alt="Screw 3"/>
               <p><span>⌀</span>104</p>
             </div>
             <div className={styles.card}>
-              <img src={screw1} alt="Screw 4"/>
+              <img src='/assets/product/OurScrew1.png' alt="Screw 4"/>
               <p><span>⌀</span>114</p>
             </div>
           </div>
@@ -218,20 +218,20 @@ const Products = () => {
           <p>Extendables</p>
           <div className={styles.cardContainer}>
             <div className={styles.card}>
-              <img src={V76} alt="V-76"/>
-              <p>V-76</p>
+              <img src={V76} alt="E-76"/>
+              <p>E-76</p>
             </div>
             <div className={styles.card}>
-              <img src={V76} alt="V-89"/>
-              <p>V-89</p>
+              <img src={V76} alt="E-89"/>
+              <p>E-89</p>
             </div>
             <div className={styles.card}>
-              <img src={V76} alt="V-104"/>
-              <p>V-104</p>
+              <img src={V76} alt="E-104"/>
+              <p>E-104</p>
             </div>
             <div className={styles.card}>
-              <img src={V76} alt="V-114"/>
-              <p>V-114</p>
+              <img src={V76} alt="E-114"/>
+              <p>E-114</p>
             </div>
           </div>
         </div>

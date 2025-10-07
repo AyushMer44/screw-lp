@@ -15,9 +15,9 @@ const Home = () => {
   return (
     <div className={styles.home}>
       <div className={styles.content}>
-        <div className={styles.heading}>
-          BIG <span> SCREW</span> SOLUTIONS
-        </div>
+        {/*<div className={styles.heading}>*/}
+        {/*  <span>BIGSCREW</span> SOLUTIONS*/}
+        {/*</div>*/}
         <div className={styles.subheading}>Foundation of the Future</div>
         <div className={styles.description}>
           Where decades of experience meet advanced automation — redefining how the world <br/>

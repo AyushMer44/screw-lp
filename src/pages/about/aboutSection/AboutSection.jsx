@@ -6,9 +6,9 @@ const AboutSection = () => {
   return (
     <section className={styles.groundScrewContainer}>
       {/* Left Image */}
-      <div className={styles.imageContainer}>
-        <img src="/assets/about/screw2.png" alt="Ground Screw" />
-      </div>
+      {/*<div className={styles.imageContainer}>*/}
+      {/*  <img src="/assets/about/screw2.png" alt="Ground Screw" />*/}
+      {/*</div>*/}
 
       {/* Right Content */}
       <div className={styles.content}>

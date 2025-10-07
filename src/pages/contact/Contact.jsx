@@ -8,7 +8,7 @@ const Contact = () => {
   const mapInstanceRef = useRef(null);
 
   // Head Office Location: Rabale, Navi Mumbai
-  const headOfficeCoords = [19.1528, 73.0096];
+  const headOfficeCoords = [19.142226, 73.003975];
 
   useEffect(() => {
     // Only initialize if map hasn't been created yet
@@ -195,7 +195,7 @@ const Contact = () => {
           </svg>
           <div>
             <p className={styles.p1}>Call</p>
-            <p className={styles.p2}>+91 98200 16129</p>
+            <p className={styles.p2}>+91 99879 95568</p>
           </div>
         </div>
       </div>

@@ -21,34 +21,35 @@ const About = () => {
         </div>
       </div>
 
+      <NewSection/>
       <div className={styles.contentSection}>
-        <div className={styles.topText}>
-          Welcome to <strong> BIGSCREW SOLUTIONS</strong> — India’s largest manufacturer
-          of ground screws and accessories. With over four decades of experience
-          in sheet metal component manufacturing, machining, and bulk
-          fabrication, we have become a trusted partner for durable and
-          sustainable foundation solutions. <br />
-          <br />
-          As the first Indian company to scale up ground screw production,
-          <strong> BIGSCREW SOLUTIONS</strong> leads the industry with a blend of
-          innovation, automation, and quality. Our in-house facilities include
-          <strong>
-            {" "}
-            3KW & 6KW laser cutting machines, CNC bending, rotary swagging, and
-            automatic spiral and nut welding systems
-          </strong>
-          , ensuring complete automation and precision in every screw we
-          produce.
-          <br />
-          <br />
-          We manufacture screws ranging from{" "}
-          <strong>70mm to 100mm diameter</strong>, with thicknesses of{" "}
-          <strong>2mm to 5mm</strong> and lengths up to <strong>3000mm</strong>,
-          designed to support diverse soil and structural requirements. Our
-          current production capacity stands at{" "}
-          <strong>5,000–8,000 ground screws monthly</strong>, with the ability
-          to double within 30 days to meet project demand.
-        </div>
+        {/*<div className={styles.topText}>*/}
+        {/*  Welcome to <strong> BIGSCREW SOLUTIONS</strong> — India’s largest manufacturer*/}
+        {/*  of ground screws and accessories. With over four decades of experience*/}
+        {/*  in sheet metal component manufacturing, machining, and bulk*/}
+        {/*  fabrication, we have become a trusted partner for durable and*/}
+        {/*  sustainable foundation solutions. <br />*/}
+        {/*  <br />*/}
+        {/*  As the first Indian company to scale up ground screw production,*/}
+        {/*  <strong> BIGSCREW SOLUTIONS</strong> leads the industry with a blend of*/}
+        {/*  innovation, automation, and quality. Our in-house facilities include*/}
+        {/*  <strong>*/}
+        {/*    {" "}*/}
+        {/*    3KW & 6KW laser cutting machines, CNC bending, rotary swagging, and*/}
+        {/*    automatic spiral and nut welding systems*/}
+        {/*  </strong>*/}
+        {/*  , ensuring complete automation and precision in every screw we*/}
+        {/*  produce.*/}
+        {/*  <br />*/}
+        {/*  <br />*/}
+        {/*  We manufacture screws ranging from{" "}*/}
+        {/*  <strong>70mm to 100mm diameter</strong>, with thicknesses of{" "}*/}
+        {/*  <strong>2mm to 5mm</strong> and lengths up to <strong>3000mm</strong>,*/}
+        {/*  designed to support diverse soil and structural requirements. Our*/}
+        {/*  current production capacity stands at{" "}*/}
+        {/*  <strong>5,000–8,000 ground screws monthly</strong>, with the ability*/}
+        {/*  to double within 30 days to meet project demand.*/}
+        {/*</div>*/}
         <div className={styles.cardRow}>
           <div className={styles.card}>
             <div className={styles.iconCircle}>
@@ -83,8 +84,7 @@ const About = () => {
         </div>
       </div>
       <OurTeam />
-      <NewSection/>
-      {/*<AboutSection />*/}
+      <AboutSection />
       <Footer />
     </>
   );
