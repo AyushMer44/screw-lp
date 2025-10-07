@@ -1,0 +1,81 @@
+.newSection {
+  padding: 4rem 1rem;
+  background-color: #ffffff;
+
+  @media (max-width: 768px) {
+    padding: 2rem 1rem;
+  }
+}
+
+.container {
+  margin: 0 2rem;
+
+  @media (max-width: 768px) {
+    margin: 0 1rem;
+  }
+}
+
+.content {
+  display: block;
+  position: relative;
+}
+
+.image {
+  float: right;
+  width: 45%;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+
+  @media (max-width: 1024px) {
+    width: 50%;
+    margin-left: 1.5rem;
+  }
+
+  @media (max-width: 768px) {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 2rem;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.text {
+  p {
+    margin-bottom: 1rem;
+    font-size: clamp(1rem, 2vw, 1.3rem);
+    color: #374151;
+    line-height: 1.7;
+
+    @media (max-width: 1024px) {
+      font-size: clamp(0.95rem, 1.8vw, 1.2rem);
+    }
+
+    @media (max-width: 768px) {
+      font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+      line-height: 1.6;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// Clear float after content
+.content::after {
+  content: "";
+  display: table;
+  clear: both;
+}

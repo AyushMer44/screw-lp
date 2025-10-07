@@ -5,22 +5,18 @@
 }
 
 .header {
-  margin-top: 32px;
+  //margin-top: 32px;
 
   h2 {
     font-size: 3rem;
     letter-spacing: 2px;
     font-weight: bold;
-    margin-bottom: 26px;
-    margin-top: 110px;
 
     @media screen and (max-width: 768px) {
       font-size: 2.4rem;
-      margin-top: 70px;
     }
     @media screen and (max-width: 480px) {
       font-size: 2rem;
-      margin-top: 50px;
     }
   }
   .subheading {
@@ -123,7 +119,7 @@
 }
 
 .description {
-  min-height: 40vh;
+  //min-height: 40vh;
   display: flex;
   align-items: center;
   justify-content: center;

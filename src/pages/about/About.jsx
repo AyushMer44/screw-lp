@@ -6,6 +6,7 @@ import Telescope from "../../assets/about/telescope.svg"; // adjust path accordi
 import OurTeam from "./ourTeam/OurTeam";
 import AboutSection from "./aboutSection/AboutSection";
 import Footer from "../../components/footer/Footer";
+import NewSection from "./newSection/NewSection.jsx";
 
 const About = () => {
   return (
@@ -82,7 +83,8 @@ const About = () => {
         </div>
       </div>
       <OurTeam />
-      <AboutSection />
+      <NewSection/>
+      {/*<AboutSection />*/}
       <Footer />
     </>
   );

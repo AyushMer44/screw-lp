@@ -61,17 +61,17 @@ const OurTeam = () => (
         </div>
       ))}
     </div>
-    <div className={styles.description}>
-      <p>
-        At BIGSCREW, our team is made up of dedicated professionals with
-        expertise in engineering, construction, and sustainable <br />{" "}
-        foundations. We share a common goal—to provide reliable, eco-friendly,
-        and innovative ground screw solutions that replace <br /> traditional
-        concrete foundations. With a customer-first approach and years of
-        hands-on experience, our team ensures every project is <br /> delivered
-        with precision, efficiency, and care for the environment.
-      </p>
-    </div>
+    {/*<div className={styles.description}>*/}
+    {/*  <p>*/}
+    {/*    At BIGSCREW, our team is made up of dedicated professionals with*/}
+    {/*    expertise in engineering, construction, and sustainable <br />{" "}*/}
+    {/*    foundations. We share a common goal—to provide reliable, eco-friendly,*/}
+    {/*    and innovative ground screw solutions that replace <br /> traditional*/}
+    {/*    concrete foundations. With a customer-first approach and years of*/}
+    {/*    hands-on experience, our team ensures every project is <br /> delivered*/}
+    {/*    with precision, efficiency, and care for the environment.*/}
+    {/*  </p>*/}
+    {/*</div>*/}
   </div>
 );
 
