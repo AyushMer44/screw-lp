@@ -63,7 +63,7 @@ const Products = () => {
 
       <div className={styles.wrapper} ref={ref}>
         <div className={styles.center1}>
-          <img src={image2} alt="Carbon Steel Pipe"/>
+          <img src='/assets/product/BigScrew.png' alt="Carbon Steel Pipe"/>
         </div>
 
         <motion.div
@@ -134,7 +134,7 @@ const Products = () => {
       </div>
 
       <div className={styles.center}>
-        <img src={newScrew} alt="Image 1"/>
+        <img src='/assets/product/BigScrew1.png' alt="Image 1"/>
         <div className={styles.middleContainer}>
           <div className={styles.middle}>
             <MyIcon1/>

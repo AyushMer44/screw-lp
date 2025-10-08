@@ -1,17 +1,17 @@
-// Variables
-$primary-color: #667eea;
-$primary-dark: #764ba2;
-$secondary-color: #f093fb;
+// Variables - Yellow Theme
+$primary-color: #f9c50d;
+$primary-dark: #e6b000;
+$secondary-color: #fff3cd;
 $text-dark: #2d3748;
 $text-light: #4a5568;
 $text-muted: #718096;
-$bg-light: #f7fafc;
+$bg-light: #fffbf0;
 $bg-white: #ffffff;
-$border-color: #e2e8f0;
-$shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
-$shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
-$shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
-$shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.3);
+$border-color: #ffeaa7;
+$shadow-sm: 0 2px 4px rgba(249, 197, 13, 0.1);
+$shadow-md: 0 4px 6px rgba(249, 197, 13, 0.15);
+$shadow-lg: 0 10px 25px rgba(249, 197, 13, 0.2);
+$shadow-xl: 0 20px 60px rgba(249, 197, 13, 0.25);
 
 // Mixins
 @mixin gradient-bg {
@@ -57,7 +57,7 @@ $shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.3);
 // Main container
 .privacyPolicy {
   min-height: 100vh;
-  @include gradient-bg;
+  //@include gradient-bg;
   padding: 60px 20px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
 
@@ -103,7 +103,7 @@ $shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.3);
     right: -50%;
     width: 200%;
     height: 200%;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, transparent 70%);
     animation: pulse 15s ease-in-out infinite;
   }
 }
@@ -112,9 +112,10 @@ $shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.3);
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 20px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   position: relative;
   z-index: 1;
+  color: $bg-white;
 
   @include tablet {
     font-size: 2.5rem;
@@ -134,6 +135,7 @@ $shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.3);
   opacity: 0.95;
   position: relative;
   z-index: 1;
+  color: $bg-white;
 
   @include tablet {
     font-size: 1rem;
@@ -321,7 +323,7 @@ $shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.3);
   }
 
   &:hover {
-    color: $primary-color;
+    color: $primary-dark;
     padding-left: 35px;
 
     @include mobile {
@@ -354,7 +356,7 @@ $shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.3);
 .privacyPolicy__note {
   margin-top: 25px;
   padding: 20px 25px;
-  background: linear-gradient(135deg, #f6f8ff 0%, #f0f4ff 100%);
+  background: linear-gradient(135deg, $secondary-color 0%, $bg-light 100%);
   border-left: 4px solid $primary-color;
   border-radius: 8px;
   font-size: 0.95rem;
@@ -368,7 +370,7 @@ $shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.3);
   }
 
   strong {
-    color: $primary-color;
+    color: $primary-dark;
     font-weight: 600;
     display: block;
     margin-bottom: 8px;
