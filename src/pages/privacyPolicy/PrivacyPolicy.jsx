@@ -134,7 +134,7 @@ const PrivacyPolicy = () => {
                 </div>
 
                 <footer className={styles.privacyPolicy__footer}>
-                    <p>Last Updated: October 2025</p>
+                    <p>© 2025 BigScrew Solutions. All Rights Reserved</p>
                 </footer>
             </div>
         </div>

@@ -205,7 +205,7 @@ const TermsAndConditions = () => {
                 </div>
 
                 <footer className={styles.termsConditions__footer}>
-                    <p>Last Updated: October 2025</p>
+                    <p>© 2025 BigScrew Solutions. All Rights Reserved</p>
                 </footer>
             </div>
         </div>

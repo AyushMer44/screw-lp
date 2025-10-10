@@ -46,14 +46,24 @@ const Install = () => {
         <h2 className={styles.subtitle}>PROCESS</h2>
 
         <div className={styles.imageGrid}>
-          <div className={styles.div1}>1</div>
-          <div className={styles.div2}>2</div>
-          <div className={styles.div3}>3</div>
-          <div className={styles.div4}>4</div>
-          <div className={styles.div5}>5</div>
+          <div className={styles.div1}>
+            <img src="/assets/Process1/1.JPG" alt="1"/>
+          </div>
+          <div className={styles.div2}>
+            <img src="/assets/Process1/2.JPG" alt="2"/>
+          </div>
+          <div className={styles.div3}>
+            <img src="/assets/Process1/3.JPG" alt="3"/>
+          </div>
+          <div className={styles.div4}>
+            <img src="/assets/Process1/4.JPG" alt="4"/>
+          </div>
+          <div className={styles.div5}>
+            <img src="/assets/Process1/5.JPG" alt="5"/>
+          </div>
         </div>
       </div>
-      <Footer />
+      <Footer/>
     </div>
   );
 };

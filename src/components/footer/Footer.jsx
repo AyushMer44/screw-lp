@@ -107,7 +107,7 @@ const Footer = () => {
 
         <div className={styles.bottom}>
         <span className={styles.copyright}>
-          © 2025 Big Screw Solutions. All Rights Reserved
+          © 2025 BigScrew Solutions. All Rights Reserved
         </span>
         </div>
       </footer>

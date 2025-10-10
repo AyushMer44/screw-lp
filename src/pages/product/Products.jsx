@@ -63,7 +63,7 @@ const Products = () => {
 
       <div className={styles.wrapper} ref={ref}>
         <div className={styles.center1}>
-          <img src='/assets/product/BigScrew.png' alt="Carbon Steel Pipe"/>
+          <img src='/assets/product/OurNail.png' alt="Carbon Steel Pipe"/>
         </div>
 
         <motion.div
@@ -205,7 +205,7 @@ const Products = () => {
             </div>
             <div className={styles.card}>
               <img src='/assets/product/OurScrew1.png' alt="Screw 3"/>
-              <p><span>⌀</span>104</p>
+              <p><span>⌀</span>101</p>
             </div>
             <div className={styles.card}>
               <img src='/assets/product/OurScrew1.png' alt="Screw 4"/>
@@ -226,8 +226,8 @@ const Products = () => {
               <p>E-89</p>
             </div>
             <div className={styles.card}>
-              <img src={V76} alt="E-104"/>
-              <p>E-104</p>
+              <img src={V76} alt="E-101"/>
+              <p>E-101</p>
             </div>
             <div className={styles.card}>
               <img src={V76} alt="E-114"/>
