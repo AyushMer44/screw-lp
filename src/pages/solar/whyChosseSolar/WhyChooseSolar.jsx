@@ -5,19 +5,19 @@ import { FaCheck, FaCheckCircle, FaTimes, FaTimesCircle } from "react-icons/fa";
 const WhyChooseSolar = () => {
   return (
     <div className={styles.container}>
-      <h2 className={styles.title}>Why Choose Solar Ground Screws?</h2>
+      <h2 className={styles.title}>Why helical piles are superior than concrete?</h2>
 
       <div className={styles.cards}>
         {/* Pros Card */}
         <div className={`${styles.card} ${styles.pros}`}>
-          <div className={styles.header}>
-            <div className={styles.iconWrapper}>
-              <FaCheck className={styles.iconCheck} />
-            </div>
-            <span>Pros</span>
-          </div>
+          {/*<div className={styles.header}>*/}
+          {/*  <div className={styles.iconWrapper}>*/}
+          {/*    <FaCheck className={styles.iconCheck} />*/}
+          {/*  </div>*/}
+          {/*  <span>Pros</span>*/}
+          {/*</div>*/}
           <div className={styles.section}>
-            <h3 className={styles.heading}>Big Screws</h3>
+            <h3 className={styles.heading}>Big Screw</h3>
             <ul>
               <li>Quick installation: no curing time</li>
               <li>Eco-friendly &amp; minimal soil disruption</li>
@@ -29,12 +29,12 @@ const WhyChooseSolar = () => {
 
         {/* Cons Card */}
         <div className={`${styles.card} ${styles.cons}`}>
-          <div className={styles.header}>
-            <div className={styles.iconCrossWrapper}>
-              <FaTimes className={styles.iconCross} />
-            </div>
-            <span>Cons</span>
-          </div>
+          {/*<div className={styles.header}>*/}
+          {/*  <div className={styles.iconCrossWrapper}>*/}
+          {/*    <FaTimes className={styles.iconCross} />*/}
+          {/*  </div>*/}
+          {/*  <span>Cons</span>*/}
+          {/*</div>*/}
           <div className={styles.section}>
             <h3 className={styles.heading}>Concrete</h3>
             <ul>

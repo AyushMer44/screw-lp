@@ -75,8 +75,10 @@ const Home = () => {
             <div className={styles.content}>
                 <div className={styles.subheading}>Foundation of the Future</div>
                 <div className={styles.description}>
+                    Delivering end-to-end solutions for <span>design</span>, <span>supply</span> and <span>installation</span> of
+                    helical piles for all foundation<br/> needs.
                     Where decades of experience meet advanced automation — redefining how
-                    the world <br />
+                    the world <br/>
                     builds with reliable, sustainable screw-pile technology.
                 </div>
             </div>

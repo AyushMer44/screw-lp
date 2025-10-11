@@ -138,52 +138,42 @@ const Products = () => {
         <div className={styles.middleContainer}>
           <div className={styles.middle}>
             <MyIcon1/>
-            <p>Galvanized</p>
-            <MyIcon2/>
+            <p>Galvanized Protection</p>
+            <MyIcon1/>
           </div>
           <div className={styles.middle}>
             <MyIcon1/>
-            <p>Greater Depth</p>
+            <p>Suitable for all Soil types</p>
             <MyIcon2/>
           </div>
           <div className={styles.middle}>
-            <MyIcon1/>
-            <p>Works in all soil types</p>
             <MyIcon2/>
-          </div>
-          <div className={styles.middle}>
-            <MyIcon1/>
             <p>Quick Installation</p>
-            <MyIcon2/>
+            <MyIcon1/>
           </div>
           <div className={styles.middle}>
-            <MyIcon1/>
+            <MyIcon2/>
             <p>High Load Capacity</p>
+            <MyIcon1/>
+          </div>
+          <div className={styles.middle}>
             <MyIcon2/>
+            <p>Depth Achievable</p>
+            <MyIcon1/>
+          </div>
+          <div className={styles.middle}>
+            <MyIcon2/>
+            <p>Best for Heavy Structures</p>
+            <MyIcon1/>
           </div>
           <div className={styles.middle}>
             <MyIcon1/>
-            <p>Onsite Welding Possible</p>
-            <MyIcon2/>
+            <p>Corrosion Resistance</p>
+            <MyIcon1/>
           </div>
           <div className={styles.middle}>
             <MyIcon1/>
-            <p>Reusable/Removable</p>
-            <MyIcon2/>
-          </div>
-          <div className={styles.middle}>
-            <MyIcon1/>
-            <p>Best For Heavy Structures</p>
-            <MyIcon2/>
-          </div>
-          <div className={styles.middle}>
-            <MyIcon1/>
-            <p>Higher Cost</p>
-            <MyIcon2/>
-          </div>
-          <div className={styles.middle}>
-            <MyIcon1/>
-            <p>Lower Cost</p>
+            <p>Installation Equipment</p>
             <MyIcon2/>
           </div>
         </div>

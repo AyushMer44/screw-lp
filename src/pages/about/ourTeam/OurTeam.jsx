@@ -17,15 +17,15 @@ const TEAM_MEMBERS = [
     image: "https://avatar.iran.liara.run/public/boy",
   },
   {
-    name: "Harjith Saini",
-    designation: "Director",
+    name: "PV Pavan Kumar",
+    designation: "Senior Geotechnical Engineer",
     linkedin: "LinkedIn And",
     email: "Email ID",
     image: "https://avatar.iran.liara.run/public/boy",
   },
   {
-    name: "Harjith Saini",
-    designation: "Director",
+    name: "Harish Panghal",
+    designation: "Senior Structural Engineer",
     linkedin: "LinkedIn And",
     email: "Email ID",
     image: "https://avatar.iran.liara.run/public/boy",
@@ -45,18 +45,8 @@ const OurTeam = () => (
             <img src={member.image} alt="team-avatar" />
           </div>
           <div className={styles.memberInfo}>
-            <div>{member.name}</div>
+            <div className={styles.name}>{member.name}</div>
             <div>{member.designation}</div>
-            <div>
-              <a
-                href={member.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                LinkedIn
-              </a>
-            </div>
-            <div>{member.email}</div>
           </div>
         </div>
       ))}
