@@ -10,12 +10,14 @@ import Money from "../../assets/home/yellowBox/money.svg";
 import Sustainable from "../../assets/home/yellowBox/sustainable.svg";
 import Gear from "../../assets/home/yellowBox/gear.svg";
 
-const img1 = "/assets/Process1/2.JPG"
-const img2 = "/assets/Process1/3.JPG"
-const img3 = "/assets/about/back.png"
-const img4 = "/assets/installation/2.jpg"
+const img1 = "/assets/Process1/2.JPG";
+const img2 = "/assets/home/background.png";
+const img3 = "/assets/about/back.png";
+const img4 = "/assets/installation/2.jpg";
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
-const images = [img1,img2,img3,img4];
+const images = [img1, img2, img4];
 
 const Home = () => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -27,6 +29,16 @@ const Home = () => {
 
         return () => clearInterval(interval);
     }, []);
+
+    const handlePrev = () => {
+        setCurrentImageIndex(
+            (prevIndex) => (prevIndex - 1 + images.length) % images.length
+        );
+    };
+
+    const handleNext = () => {
+        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    };
 
     return (
         <div className={styles.home}>
@@ -41,6 +53,22 @@ const Home = () => {
                         style={{ backgroundImage: `url(${image})` }}
                     />
                 ))}
+            </div>
+
+            {/* Prev/Next Buttons */}
+            <div className={styles.navigation}>
+                <button
+                    className={`${styles.navButton} ${styles.prevButton}`}
+                    onClick={handlePrev}
+                >
+                    <ArrowBackIosIcon sx={{ fontSize: 60 }}/>
+                </button>
+                <button
+                    className={`${styles.navButton} ${styles.nextButton}`}
+                    onClick={handleNext}
+                >
+                    <ArrowForwardIosIcon sx={{ fontSize: 60 }}/>
+                </button>
             </div>
 
             {/* Content */}
